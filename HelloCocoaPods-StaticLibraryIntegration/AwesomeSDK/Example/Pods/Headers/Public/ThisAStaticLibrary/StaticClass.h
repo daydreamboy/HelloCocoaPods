@@ -1,0 +1,1 @@
+../../../../../ThisAStaticLibrary/ThisAStaticLibrary/Classes/StaticClass.h

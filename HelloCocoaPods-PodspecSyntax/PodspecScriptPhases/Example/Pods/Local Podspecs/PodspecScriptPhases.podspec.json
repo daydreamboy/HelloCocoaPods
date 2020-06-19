@@ -1,0 +1,34 @@
+{
+  "name": "PodspecScriptPhases",
+  "version": "0.1.0",
+  "summary": "A short description of PodspecScriptPhases.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/daydreamboy/PodspecScriptPhases",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "daydreamboy": "wesleychen.cl@alibaba-inc.com"
+  },
+  "source": {
+    "git": "https://github.com/daydreamboy/PodspecScriptPhases.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PodspecScriptPhases/Classes/**/*",
+  "script_phases": [
+    {
+      "name": "Hello World",
+      "script": "echo \"Hello World\""
+    },
+    {
+      "name": "Hello Ruby World",
+      "script": "puts \"Hello World\"",
+      "shell_path": "/usr/bin/ruby",
+      "execution_position": "before_compile"
+    }
+  ]
+}

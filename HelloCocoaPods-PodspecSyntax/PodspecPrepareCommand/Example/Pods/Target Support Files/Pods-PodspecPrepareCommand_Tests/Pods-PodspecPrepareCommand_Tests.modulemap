@@ -1,0 +1,6 @@
+framework module Pods_PodspecPrepareCommand_Tests {
+  umbrella header "Pods-PodspecPrepareCommand_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

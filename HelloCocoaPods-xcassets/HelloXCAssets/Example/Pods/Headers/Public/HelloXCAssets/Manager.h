@@ -1,0 +1,1 @@
+../../../../../HelloXCAssets/Classes/Manager.h

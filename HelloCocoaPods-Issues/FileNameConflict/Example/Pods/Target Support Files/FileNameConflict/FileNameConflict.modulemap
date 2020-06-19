@@ -1,0 +1,6 @@
+framework module FileNameConflict {
+  umbrella header "FileNameConflict-umbrella.h"
+
+  export *
+  module * { export * }
+}

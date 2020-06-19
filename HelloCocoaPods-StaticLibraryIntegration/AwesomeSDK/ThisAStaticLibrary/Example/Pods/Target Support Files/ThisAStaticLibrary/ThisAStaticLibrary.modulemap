@@ -1,0 +1,6 @@
+framework module ThisAStaticLibrary {
+  umbrella header "ThisAStaticLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

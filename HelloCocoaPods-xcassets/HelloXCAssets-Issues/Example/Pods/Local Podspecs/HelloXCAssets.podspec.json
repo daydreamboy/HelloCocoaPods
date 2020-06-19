@@ -1,0 +1,35 @@
+{
+  "name": "HelloXCAssets",
+  "version": "0.1.0",
+  "summary": "A short description of HelloXCAssets.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/daydreamboy/HelloXCAssets",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "daydreamboy": "wesley4chen@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/daydreamboy/HelloXCAssets.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HelloXCAssets/Classes/**/*",
+  "resource_bundles": {
+    "HelloXCAssets": [
+      "HelloXCAssets/Assets/*.png",
+      "HelloXCAssets/Assets/icons",
+      "HelloXCAssets/Assets/xcasstsInResourceBundlesAttribute1.xcassets",
+      "HelloXCAssets/Assets/xcasstsInResourceBundlesAttribute2.xcassets"
+    ]
+  },
+  "resources": [
+    "HelloXCAssets/Assets/xcasstsInResourceAttribute1.xcassets",
+    "HelloXCAssets/Assets/xcasstsInResourceAttribute2.xcassets",
+    "HelloXCAssets/Assets/icons"
+  ]
+}

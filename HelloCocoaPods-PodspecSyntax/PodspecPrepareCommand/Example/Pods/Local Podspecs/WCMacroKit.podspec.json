@@ -1,0 +1,23 @@
+{
+  "name": "WCMacroKit",
+  "version": "0.0.1",
+  "summary": "A collection macro definitions for coding.",
+  "description": "WCMacroKit provides utility macros, such as strings, colors, versions and so on.",
+  "homepage": "https://github.com/daydreamboy/WCMacroKit",
+  "license": "MIT",
+  "authors": {
+    "daydreamboy": "wesley4chen@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/daydreamboy/WCMacroKit.git",
+    "tag": "0.0.1"
+  },
+  "vendored_frameworks": "Build/Product/WCMacroKit.framework",
+  "prepare_command": "/bin/bash prepare_command_build.sh",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

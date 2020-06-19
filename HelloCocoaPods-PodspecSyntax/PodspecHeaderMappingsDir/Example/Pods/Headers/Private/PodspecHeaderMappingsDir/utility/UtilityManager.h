@@ -1,0 +1,1 @@
+../../../../../../PodspecHeaderMappingsDir/include/utility/UtilityManager.h

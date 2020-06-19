@@ -1,0 +1,1 @@
+../../../../../../PodspecHeaderMappingsDir/include/system/SystemManager.h

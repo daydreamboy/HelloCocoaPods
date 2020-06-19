@@ -1,0 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/WXOpenIMSDK" "${PODS_ROOT}/ALBBMediaService" "${PODS_ROOT}/YWAudioKit" "$PODS_CONFIGURATION_BUILD_DIR/AwesomeSDK_static_framework" "$PODS_CONFIGURATION_BUILD_DIR/FrameworkA" "$PODS_CONFIGURATION_BUILD_DIR/FrameworkB" "$PODS_CONFIGURATION_BUILD_DIR/FrameworkC"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 USE_POD USER_DEF=2 USE_POD USER_DEF=2
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ThisAStaticLibrary" "${PODS_CONFIGURATION_BUILD_DIR}/AwesomeSDK_static_framework/AwesomeSDKStatic.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FrameworkA/FrameworkA.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FrameworkB/FrameworkB.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FrameworkC/FrameworkC.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AwesomeSDK_dynamic_framework/AwesomeSDKDynamic.framework/Headers"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/ThisAStaticLibrary"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ThisAStaticLibrary" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/AwesomeSDK_static_framework/AwesomeSDKStatic.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/FrameworkA/FrameworkA.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/FrameworkB/FrameworkB.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/FrameworkC/FrameworkC.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/AwesomeSDK_dynamic_framework/AwesomeSDKDynamic.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"ThisAStaticLibrary" -framework "AwesomeSDKStatic" -framework "FrameworkA" -framework "FrameworkB" -framework "FrameworkC"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

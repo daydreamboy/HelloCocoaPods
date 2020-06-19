@@ -1,0 +1,26 @@
+{
+  "name": "PodspecHeaderMappingsDir",
+  "version": "0.1.0",
+  "summary": "A short description of PodspecHeaderMappingsDir.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/daydreamboy/PodspecHeaderMappingsDir",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "daydreamboy": "wesleychen.cl@alibaba-inc.com"
+  },
+  "source": {
+    "git": "https://github.com/daydreamboy/PodspecHeaderMappingsDir.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": [
+    "PodspecHeaderMappingsDir/include/**/*",
+    "PodspecHeaderMappingsDir/src/**/*"
+  ],
+  "header_mappings_dir": "PodspecHeaderMappingsDir/include"
+}

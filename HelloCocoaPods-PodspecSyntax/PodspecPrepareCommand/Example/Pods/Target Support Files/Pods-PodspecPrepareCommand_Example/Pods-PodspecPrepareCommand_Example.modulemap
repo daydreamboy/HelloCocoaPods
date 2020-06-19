@@ -1,0 +1,6 @@
+framework module Pods_PodspecPrepareCommand_Example {
+  umbrella header "Pods-PodspecPrepareCommand_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

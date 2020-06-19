@@ -1,0 +1,6 @@
+framework module Pods_PodspecScriptPhases_Tests {
+  umbrella header "Pods-PodspecScriptPhases_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

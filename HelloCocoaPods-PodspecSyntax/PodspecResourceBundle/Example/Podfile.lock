@@ -1,0 +1,16 @@
+PODS:
+  - PodspecResourceBundle (0.1.0)
+
+DEPENDENCIES:
+  - PodspecResourceBundle (from `../PodspecResourceBundle.podspec.json`)
+
+EXTERNAL SOURCES:
+  PodspecResourceBundle:
+    :path: "../PodspecResourceBundle.podspec.json"
+
+SPEC CHECKSUMS:
+  PodspecResourceBundle: bccb4bd98e807742189a57a8a24dba16e07e5d07
+
+PODFILE CHECKSUM: 531cab68d7e0d9d3dbd8b613fc75b33faa2f918e
+
+COCOAPODS: 1.8.4

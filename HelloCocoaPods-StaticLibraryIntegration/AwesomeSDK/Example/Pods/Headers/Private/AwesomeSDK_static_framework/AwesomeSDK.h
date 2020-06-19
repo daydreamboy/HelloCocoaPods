@@ -1,0 +1,1 @@
+../../../../../AwesomeSDK_static_framework/Classes/AwesomeSDK.h

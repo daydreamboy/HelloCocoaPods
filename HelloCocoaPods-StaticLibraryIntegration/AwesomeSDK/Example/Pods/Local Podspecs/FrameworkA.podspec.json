@@ -1,0 +1,21 @@
+{
+  "name": "FrameworkA",
+  "version": "0.0.1",
+  "summary": "A short description of FrameworkA which is a subframework in AwesomeSDK_umbrella_framework.",
+  "description": "This is a description for FrameworkA.",
+  "homepage": "http://EXAMPLE/AwesomeSDK_umbrella_framework",
+  "license": "MIT",
+  "authors": {
+    "daydreamboy": "wesley4chen@gmail.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/daydreamboy/FrameworkA.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "FrameworkA/**/*.{h,m}"
+  ]
+}

@@ -1,0 +1,6 @@
+framework module PodspecScriptPhases {
+  umbrella header "PodspecScriptPhases-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_ConflictFrameworkName {
+  umbrella header "Pods-ConflictFrameworkName-umbrella.h"
+
+  export *
+  module * { export * }
+}

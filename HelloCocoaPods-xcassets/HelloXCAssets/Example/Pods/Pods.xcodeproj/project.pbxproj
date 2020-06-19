@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19AB0786E992C377FBC0704C6D609996 /* shop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5CE427F4063B2079A039B60C051DDAD /* shop@2x.png */; };
+		38454E57BC51478C700A4527D221216C /* favourited@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 979AB9052DB2222B1AB7AE2E6EBF5378 /* favourited@3x.png */; };
+		5289561CE7A4B26348AAEAA52A050E3E /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6101DB94075216A78F31AFA9F35C67A /* Manager.m */; };
+		5FE62422F788D6B019C97887EB433B61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		65F4FA2944FFAD9AB449556FA873EC57 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 2828CCBF89E924F9386BC57756083501 /* icons */; };
+		6611C86068EF8B995A26B0351893EA51 /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = A24BA5144FAFBFA21B2D70C1739FFE20 /* Manager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75A6604666B8110A631BC8924A04570A /* Pods-HelloXCAssets_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 883D8AA913854642B6170539B0EEBA8F /* Pods-HelloXCAssets_Example-dummy.m */; };
+		973228A63FCC6D7C1FFC54151CFE950F /* HelloXCAssets-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A85EAA0856A45D1430A064323AD3E985 /* HelloXCAssets-dummy.m */; };
+		AAB8DF2AA4FE847FA069FBE2D0ED2C53 /* xcasstsInResourceBundlesAttribute1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEE3942614A84181A47DE24E66D6F5D /* xcasstsInResourceBundlesAttribute1.xcassets */; };
+		AE7DA3ED9C1E467E888DC36C6362E5E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BA052F77ADBB0A57E6F09F3671941093 /* shop@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0334BD4F24BE6012A00585682EF02A65 /* shop@3x.png */; };
+		BD8B9AF9088641227B9777728875782C /* XcodeBeta.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DF17D5A69125F66701403E4631F19D /* XcodeBeta.png */; };
+		C47AB1ED41ECE9F6EE65E3FF6E6149AD /* Pods-HelloXCAssets_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21083808C15A09762FCB592D94829E /* Pods-HelloXCAssets_Tests-dummy.m */; };
+		C80F70462C1F756CD3F3B51EE4D5530D /* xcasstsInResourceBundlesAttribute2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D931646258F2D9653D140CC07CD2B79D /* xcasstsInResourceBundlesAttribute2.xcassets */; };
+		DEEFF5666A270B13DD069654FB5871DF /* favourited@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BEC70A67E509658055AE8E9BBCBFC9A /* favourited@2x.png */; };
+		EE8F499460B87D5FFACF27A121DE31EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		071FBD74D4D6D5B436B289A850BA682C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CEDE48711B4995659D5C2A0D0F355A2;
+			remoteInfo = HelloXCAssets;
+		};
+		B965C8B03F7EC5BE99F061BC687CF82B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4718E4783B3458A37C4E3D865BDC7BA5;
+			remoteInfo = "HelloXCAssets-MyXCAssets";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0334BD4F24BE6012A00585682EF02A65 /* shop@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "shop@3x.png"; path = "HelloXCAssets/Assets/shop@3x.png"; sourceTree = "<group>"; };
+		0793D6A0FE9B75C0B34D22E126045FDC /* Pods-HelloXCAssets_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelloXCAssets_Example.release.xcconfig"; sourceTree = "<group>"; };
+		12DB652F3491E349B26409E32DD2BAA0 /* Pods-HelloXCAssets_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HelloXCAssets_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		1DEE3942614A84181A47DE24E66D6F5D /* xcasstsInResourceBundlesAttribute1.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = xcasstsInResourceBundlesAttribute1.xcassets; path = HelloXCAssets/Assets/xcasstsInResourceBundlesAttribute1.xcassets; sourceTree = "<group>"; };
+		2444D1468F6DD3930B84FFC29B107AD8 /* xcasstsInResourceAttribute2.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = xcasstsInResourceAttribute2.xcassets; path = HelloXCAssets/Assets/xcasstsInResourceAttribute2.xcassets; sourceTree = "<group>"; };
+		2828CCBF89E924F9386BC57756083501 /* icons */ = {isa = PBXFileReference; includeInIndex = 1; name = icons; path = HelloXCAssets/Assets/icons; sourceTree = "<group>"; };
+		2D6A17B47892ADC098240A2A30B12E0C /* Pods-HelloXCAssets_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HelloXCAssets_Example-resources.sh"; sourceTree = "<group>"; };
+		2E1CCF3DB76B36D50A355ADEFB1BB878 /* libHelloXCAssets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHelloXCAssets.a; path = libHelloXCAssets.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		365A62B3960F611B77742C4FC5DAFE43 /* libPods-HelloXCAssets_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HelloXCAssets_Example.a"; path = "libPods-HelloXCAssets_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4718057EA98ABB099B58EF191A090DB6 /* MyXCAssets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MyXCAssets.bundle; path = MyXCAssets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D9C160BDF516BE9A5A8F819CF8EB73 /* Pods-HelloXCAssets_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HelloXCAssets_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5BE58D3F7CDC469D83B19AE9446875B3 /* xcasstsInResourceAttribute1.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = xcasstsInResourceAttribute1.xcassets; path = HelloXCAssets/Assets/xcasstsInResourceAttribute1.xcassets; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6AC40BD3DA3B3EA2F70421A3E1A40C5F /* Pods-HelloXCAssets_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HelloXCAssets_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		75714B2BB67D0CC0B8392BBE83316DE3 /* Pods-HelloXCAssets_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelloXCAssets_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7BEC70A67E509658055AE8E9BBCBFC9A /* favourited@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "favourited@2x.png"; path = "HelloXCAssets/Assets/favourited@2x.png"; sourceTree = "<group>"; };
+		883D8AA913854642B6170539B0EEBA8F /* Pods-HelloXCAssets_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelloXCAssets_Example-dummy.m"; sourceTree = "<group>"; };
+		886D172FF4F5F24457C897E1140403D2 /* libPods-HelloXCAssets_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HelloXCAssets_Tests.a"; path = "libPods-HelloXCAssets_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		979AB9052DB2222B1AB7AE2E6EBF5378 /* favourited@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "favourited@3x.png"; path = "HelloXCAssets/Assets/favourited@3x.png"; sourceTree = "<group>"; };
+		A1D74E757487D0E9364DCCE8875585A5 /* Pods-HelloXCAssets_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HelloXCAssets_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A24BA5144FAFBFA21B2D70C1739FFE20 /* Manager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Manager.h; path = HelloXCAssets/Classes/Manager.h; sourceTree = "<group>"; };
+		A85EAA0856A45D1430A064323AD3E985 /* HelloXCAssets-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HelloXCAssets-dummy.m"; sourceTree = "<group>"; };
+		ACB4000361A53F8A01F90D4C0C4BD893 /* Pods-HelloXCAssets_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HelloXCAssets_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD36943096138F2239B33282EB1B910D /* Pods-HelloXCAssets_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelloXCAssets_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B5B80E3329BE31B33336FAAEC6E6A464 /* HelloXCAssets.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HelloXCAssets.xcconfig; sourceTree = "<group>"; };
+		B8DF17D5A69125F66701403E4631F19D /* XcodeBeta.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = XcodeBeta.png; path = HelloXCAssets/Assets/XcodeBeta.png; sourceTree = "<group>"; };
+		C1E66EDBF4A29F1A6A8C5E0476591C8C /* Pods-HelloXCAssets_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelloXCAssets_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C6101DB94075216A78F31AFA9F35C67A /* Manager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Manager.m; path = HelloXCAssets/Classes/Manager.m; sourceTree = "<group>"; };
+		D090117D869B13A2E0BEA2F4A55C77F2 /* Pods-HelloXCAssets_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HelloXCAssets_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D36E8B99B55DBE4C910C33FE02354229 /* Pods-HelloXCAssets_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HelloXCAssets_Tests-resources.sh"; sourceTree = "<group>"; };
+		D5CE427F4063B2079A039B60C051DDAD /* shop@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "shop@2x.png"; path = "HelloXCAssets/Assets/shop@2x.png"; sourceTree = "<group>"; };
+		D7417B194C44C40EB6A61F51F12E72F3 /* HelloXCAssets-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HelloXCAssets-prefix.pch"; sourceTree = "<group>"; };
+		D931646258F2D9653D140CC07CD2B79D /* xcasstsInResourceBundlesAttribute2.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = xcasstsInResourceBundlesAttribute2.xcassets; path = HelloXCAssets/Assets/xcasstsInResourceBundlesAttribute2.xcassets; sourceTree = "<group>"; };
+		FA21083808C15A09762FCB592D94829E /* Pods-HelloXCAssets_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelloXCAssets_Tests-dummy.m"; sourceTree = "<group>"; };
+		FC20F54A131AAB8997335BFD585C4764 /* ResourceBundle-MyXCAssets-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MyXCAssets-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FCC41C27F69E4E95458CDA58DE07B0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE8F499460B87D5FFACF27A121DE31EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E00DF15C2B21CA00B7A938DC42341D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7DA3ED9C1E467E888DC36C6362E5E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B377DD66FAFD440C0FF9AB7458B735AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75429678C31E663A70B5AC5CF3FBB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE62422F788D6B019C97887EB433B61 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19030683BC94511C572FC3E2AE589FB4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7891F17BDC8FBDDC8D5D667793233D10 /* Pods-HelloXCAssets_Example */,
+				A5F93D5AD8E1FDF161F64D4A63E283D9 /* Pods-HelloXCAssets_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1F0DADDC45F36E3DA39A61D0FF419063 /* HelloXCAssets */ = {
+			isa = PBXGroup;
+			children = (
+				A24BA5144FAFBFA21B2D70C1739FFE20 /* Manager.h */,
+				C6101DB94075216A78F31AFA9F35C67A /* Manager.m */,
+				87AB560DA73BEEF9871A0F18665811DA /* Resources */,
+				9D399D4FB0A7805BF1B3924DC49906A2 /* Support Files */,
+			);
+			name = HelloXCAssets;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7891F17BDC8FBDDC8D5D667793233D10 /* Pods-HelloXCAssets_Example */ = {
+			isa = PBXGroup;
+			children = (
+				59D9C160BDF516BE9A5A8F819CF8EB73 /* Pods-HelloXCAssets_Example-acknowledgements.markdown */,
+				12DB652F3491E349B26409E32DD2BAA0 /* Pods-HelloXCAssets_Example-acknowledgements.plist */,
+				883D8AA913854642B6170539B0EEBA8F /* Pods-HelloXCAssets_Example-dummy.m */,
+				D090117D869B13A2E0BEA2F4A55C77F2 /* Pods-HelloXCAssets_Example-frameworks.sh */,
+				2D6A17B47892ADC098240A2A30B12E0C /* Pods-HelloXCAssets_Example-resources.sh */,
+				75714B2BB67D0CC0B8392BBE83316DE3 /* Pods-HelloXCAssets_Example.debug.xcconfig */,
+				0793D6A0FE9B75C0B34D22E126045FDC /* Pods-HelloXCAssets_Example.release.xcconfig */,
+			);
+			name = "Pods-HelloXCAssets_Example";
+			path = "Target Support Files/Pods-HelloXCAssets_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D12A8D74AF01720D0B9DA127869C3FCC /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BA2E70784116A6045FB1E05CD27931FA /* Products */,
+				19030683BC94511C572FC3E2AE589FB4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		87AB560DA73BEEF9871A0F18665811DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7BEC70A67E509658055AE8E9BBCBFC9A /* favourited@2x.png */,
+				979AB9052DB2222B1AB7AE2E6EBF5378 /* favourited@3x.png */,
+				2828CCBF89E924F9386BC57756083501 /* icons */,
+				D5CE427F4063B2079A039B60C051DDAD /* shop@2x.png */,
+				0334BD4F24BE6012A00585682EF02A65 /* shop@3x.png */,
+				5BE58D3F7CDC469D83B19AE9446875B3 /* xcasstsInResourceAttribute1.xcassets */,
+				2444D1468F6DD3930B84FFC29B107AD8 /* xcasstsInResourceAttribute2.xcassets */,
+				1DEE3942614A84181A47DE24E66D6F5D /* xcasstsInResourceBundlesAttribute1.xcassets */,
+				D931646258F2D9653D140CC07CD2B79D /* xcasstsInResourceBundlesAttribute2.xcassets */,
+				B8DF17D5A69125F66701403E4631F19D /* XcodeBeta.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9D399D4FB0A7805BF1B3924DC49906A2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5B80E3329BE31B33336FAAEC6E6A464 /* HelloXCAssets.xcconfig */,
+				A85EAA0856A45D1430A064323AD3E985 /* HelloXCAssets-dummy.m */,
+				D7417B194C44C40EB6A61F51F12E72F3 /* HelloXCAssets-prefix.pch */,
+				FC20F54A131AAB8997335BFD585C4764 /* ResourceBundle-MyXCAssets-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HelloXCAssets";
+			sourceTree = "<group>";
+		};
+		A5F93D5AD8E1FDF161F64D4A63E283D9 /* Pods-HelloXCAssets_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A1D74E757487D0E9364DCCE8875585A5 /* Pods-HelloXCAssets_Tests-acknowledgements.markdown */,
+				ACB4000361A53F8A01F90D4C0C4BD893 /* Pods-HelloXCAssets_Tests-acknowledgements.plist */,
+				FA21083808C15A09762FCB592D94829E /* Pods-HelloXCAssets_Tests-dummy.m */,
+				6AC40BD3DA3B3EA2F70421A3E1A40C5F /* Pods-HelloXCAssets_Tests-frameworks.sh */,
+				D36E8B99B55DBE4C910C33FE02354229 /* Pods-HelloXCAssets_Tests-resources.sh */,
+				AD36943096138F2239B33282EB1B910D /* Pods-HelloXCAssets_Tests.debug.xcconfig */,
+				C1E66EDBF4A29F1A6A8C5E0476591C8C /* Pods-HelloXCAssets_Tests.release.xcconfig */,
+			);
+			name = "Pods-HelloXCAssets_Tests";
+			path = "Target Support Files/Pods-HelloXCAssets_Tests";
+			sourceTree = "<group>";
+		};
+		BA2E70784116A6045FB1E05CD27931FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E1CCF3DB76B36D50A355ADEFB1BB878 /* libHelloXCAssets.a */,
+				365A62B3960F611B77742C4FC5DAFE43 /* libPods-HelloXCAssets_Example.a */,
+				886D172FF4F5F24457C897E1140403D2 /* libPods-HelloXCAssets_Tests.a */,
+				4718057EA98ABB099B58EF191A090DB6 /* MyXCAssets.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D12A8D74AF01720D0B9DA127869C3FCC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F0DADDC45F36E3DA39A61D0FF419063 /* HelloXCAssets */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A02CB40F32BC12DCEA6D8CE68AF46DFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6611C86068EF8B995A26B0351893EA51 /* Manager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0CEDE48711B4995659D5C2A0D0F355A2 /* HelloXCAssets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6180155012BE4C0E033E30C971125036 /* Build configuration list for PBXNativeTarget "HelloXCAssets" */;
+			buildPhases = (
+				398A363EC9A1279606C5E30DDFB25317 /* Sources */,
+				5FCC41C27F69E4E95458CDA58DE07B0C /* Frameworks */,
+				A02CB40F32BC12DCEA6D8CE68AF46DFD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B97E8B717070A7DC57EBDC6224EE929C /* PBXTargetDependency */,
+			);
+			name = HelloXCAssets;
+			productName = HelloXCAssets;
+			productReference = 2E1CCF3DB76B36D50A355ADEFB1BB878 /* libHelloXCAssets.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4718E4783B3458A37C4E3D865BDC7BA5 /* HelloXCAssets-MyXCAssets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8471369B0C0772FC6C7E25545DB01B49 /* Build configuration list for PBXNativeTarget "HelloXCAssets-MyXCAssets" */;
+			buildPhases = (
+				A71B7FBEFDD317339E77C57EF8D34292 /* Sources */,
+				B377DD66FAFD440C0FF9AB7458B735AF /* Frameworks */,
+				532788A346FA0F03423FC04AAFF0DC65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HelloXCAssets-MyXCAssets";
+			productName = "HelloXCAssets-MyXCAssets";
+			productReference = 4718057EA98ABB099B58EF191A090DB6 /* MyXCAssets.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4AD828881807B606EEFC838DCE5F40B6 /* Pods-HelloXCAssets_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE28AF02245EB2219ACB115E23BCCC35 /* Build configuration list for PBXNativeTarget "Pods-HelloXCAssets_Example" */;
+			buildPhases = (
+				02088B16763805E0F52AD4319074C57E /* Sources */,
+				88E00DF15C2B21CA00B7A938DC42341D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5CFECCE47A85166504C20BC8F7B34F5 /* PBXTargetDependency */,
+			);
+			name = "Pods-HelloXCAssets_Example";
+			productName = "Pods-HelloXCAssets_Example";
+			productReference = 365A62B3960F611B77742C4FC5DAFE43 /* libPods-HelloXCAssets_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E02E319ADA1F0D25F6110E57BBAF4911 /* Pods-HelloXCAssets_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B486656EDC7361279E1CC5EC082B6EB /* Build configuration list for PBXNativeTarget "Pods-HelloXCAssets_Tests" */;
+			buildPhases = (
+				2F5CC71679890BA45FC1C1F62D67D113 /* Sources */,
+				C75429678C31E663A70B5AC5CF3FBB05 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HelloXCAssets_Tests";
+			productName = "Pods-HelloXCAssets_Tests";
+			productReference = 886D172FF4F5F24457C897E1140403D2 /* libPods-HelloXCAssets_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BA2E70784116A6045FB1E05CD27931FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CEDE48711B4995659D5C2A0D0F355A2 /* HelloXCAssets */,
+				4718E4783B3458A37C4E3D865BDC7BA5 /* HelloXCAssets-MyXCAssets */,
+				4AD828881807B606EEFC838DCE5F40B6 /* Pods-HelloXCAssets_Example */,
+				E02E319ADA1F0D25F6110E57BBAF4911 /* Pods-HelloXCAssets_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		532788A346FA0F03423FC04AAFF0DC65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEEFF5666A270B13DD069654FB5871DF /* favourited@2x.png in Resources */,
+				38454E57BC51478C700A4527D221216C /* favourited@3x.png in Resources */,
+				65F4FA2944FFAD9AB449556FA873EC57 /* icons in Resources */,
+				19AB0786E992C377FBC0704C6D609996 /* shop@2x.png in Resources */,
+				BA052F77ADBB0A57E6F09F3671941093 /* shop@3x.png in Resources */,
+				AAB8DF2AA4FE847FA069FBE2D0ED2C53 /* xcasstsInResourceBundlesAttribute1.xcassets in Resources */,
+				C80F70462C1F756CD3F3B51EE4D5530D /* xcasstsInResourceBundlesAttribute2.xcassets in Resources */,
+				BD8B9AF9088641227B9777728875782C /* XcodeBeta.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02088B16763805E0F52AD4319074C57E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A6604666B8110A631BC8924A04570A /* Pods-HelloXCAssets_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F5CC71679890BA45FC1C1F62D67D113 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47AB1ED41ECE9F6EE65E3FF6E6149AD /* Pods-HelloXCAssets_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		398A363EC9A1279606C5E30DDFB25317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973228A63FCC6D7C1FFC54151CFE950F /* HelloXCAssets-dummy.m in Sources */,
+				5289561CE7A4B26348AAEAA52A050E3E /* Manager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71B7FBEFDD317339E77C57EF8D34292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B97E8B717070A7DC57EBDC6224EE929C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HelloXCAssets-MyXCAssets";
+			target = 4718E4783B3458A37C4E3D865BDC7BA5 /* HelloXCAssets-MyXCAssets */;
+			targetProxy = B965C8B03F7EC5BE99F061BC687CF82B /* PBXContainerItemProxy */;
+		};
+		E5CFECCE47A85166504C20BC8F7B34F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HelloXCAssets;
+			target = 0CEDE48711B4995659D5C2A0D0F355A2 /* HelloXCAssets */;
+			targetProxy = 071FBD74D4D6D5B436B289A850BA682C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12DE9E3285F4720E286B8ED59B05AEDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1E66EDBF4A29F1A6A8C5E0476591C8C /* Pods-HelloXCAssets_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		292A0AA0885FCF216743DC1D59FE641B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD36943096138F2239B33282EB1B910D /* Pods-HelloXCAssets_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39A6A993CFC2276E5AE5A8543A9128BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0793D6A0FE9B75C0B34D22E126045FDC /* Pods-HelloXCAssets_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		63ECCE5A5DB06CDEE9FE8EC933BBC855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B80E3329BE31B33336FAAEC6E6A464 /* HelloXCAssets.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HelloXCAssets/HelloXCAssets-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		8CDA1BAD3E15B17B38B88084E3ED5EF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75714B2BB67D0CC0B8392BBE83316DE3 /* Pods-HelloXCAssets_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BAC1C3B346727A8B4C726CBC7A9D3057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B80E3329BE31B33336FAAEC6E6A464 /* HelloXCAssets.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HelloXCAssets";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/HelloXCAssets/ResourceBundle-MyXCAssets-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = MyXCAssets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CCF203CB82CFCD8C99A06D9BEFEB49AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B80E3329BE31B33336FAAEC6E6A464 /* HelloXCAssets.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HelloXCAssets";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/HelloXCAssets/ResourceBundle-MyXCAssets-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = MyXCAssets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E8710EF1D32D5DCD85EAF93839C2296D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B80E3329BE31B33336FAAEC6E6A464 /* HelloXCAssets.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HelloXCAssets/HelloXCAssets-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B486656EDC7361279E1CC5EC082B6EB /* Build configuration list for PBXNativeTarget "Pods-HelloXCAssets_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292A0AA0885FCF216743DC1D59FE641B /* Debug */,
+				12DE9E3285F4720E286B8ED59B05AEDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6180155012BE4C0E033E30C971125036 /* Build configuration list for PBXNativeTarget "HelloXCAssets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8710EF1D32D5DCD85EAF93839C2296D /* Debug */,
+				63ECCE5A5DB06CDEE9FE8EC933BBC855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8471369B0C0772FC6C7E25545DB01B49 /* Build configuration list for PBXNativeTarget "HelloXCAssets-MyXCAssets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF203CB82CFCD8C99A06D9BEFEB49AF /* Debug */,
+				BAC1C3B346727A8B4C726CBC7A9D3057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE28AF02245EB2219ACB115E23BCCC35 /* Build configuration list for PBXNativeTarget "Pods-HelloXCAssets_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CDA1BAD3E15B17B38B88084E3ED5EF7 /* Debug */,
+				39A6A993CFC2276E5AE5A8543A9128BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

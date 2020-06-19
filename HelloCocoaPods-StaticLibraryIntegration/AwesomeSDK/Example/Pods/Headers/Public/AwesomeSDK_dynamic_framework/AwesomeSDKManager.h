@@ -1,0 +1,1 @@
+../../../../../AwesomeSDK_dynamic_framework/Classes/AwesomeSDKManager.h

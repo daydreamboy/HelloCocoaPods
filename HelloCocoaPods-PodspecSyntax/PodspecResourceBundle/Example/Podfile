@@ -1,0 +1,14 @@
+#use_frameworks!
+
+platform :ios, '8.0'
+
+target 'PodspecResourceBundle_Example' do
+  #pod 'PodspecResourceBundle', :path => '../'
+  pod 'PodspecResourceBundle', :path => '../PodspecResourceBundle.podspec.json'
+
+  target 'PodspecResourceBundle_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

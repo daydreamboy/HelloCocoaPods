@@ -1,0 +1,22 @@
+{
+  "name": "ThisAStaticLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of ThisAStaticLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/daydreamboy/ThisAStaticLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "daydreamboy": "wesley4chen@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/daydreamboy/ThisAStaticLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ThisAStaticLibrary/Classes/**/*"
+}

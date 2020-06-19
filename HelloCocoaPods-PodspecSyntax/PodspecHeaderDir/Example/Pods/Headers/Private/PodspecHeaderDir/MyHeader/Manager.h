@@ -1,0 +1,1 @@
+../../../../../../PodspecHeaderDir/Classes/Manager.h

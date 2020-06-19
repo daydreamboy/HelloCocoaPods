@@ -1,0 +1,6 @@
+framework module HelloXCAssets {
+  umbrella header "HelloXCAssets-umbrella.h"
+
+  export *
+  module * { export * }
+}

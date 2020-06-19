@@ -1,0 +1,1 @@
+../../../../../PodspecResourceBundle/Classes/Manager.h

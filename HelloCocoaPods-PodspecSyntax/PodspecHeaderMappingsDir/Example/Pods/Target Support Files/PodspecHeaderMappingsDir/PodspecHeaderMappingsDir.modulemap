@@ -1,0 +1,6 @@
+framework module PodspecHeaderMappingsDir {
+  umbrella header "PodspecHeaderMappingsDir-umbrella.h"
+
+  export *
+  module * { export * }
+}
