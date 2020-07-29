@@ -53,7 +53,7 @@
 
 + (UIImage *)xcassetsImageInMainBundleWithName:(NSString *)name resourceBundleName:(NSString *)resourceBundleName {
     UIImage *image = nil;
-    if (resourceBundleName) {
+    if (resourceBundleName.length) {
         // resource bundle in main bundle
         NSString *resourceBundlePath = [[NSBundle mainBundle] pathForResource:resourceBundleName ofType:@"bundle"];
         NSBundle *resourceBundle = [NSBundle bundleWithPath:resourceBundlePath];

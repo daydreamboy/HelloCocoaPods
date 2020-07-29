@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  Get image in xcassets folder
 
  @param name the image name in xcassets folder
- @param resourceBundleName the resource bundel which contains xcassets folder
+ @param resourceBundleName the resource bundle which contains xcassets folder
  @param podName the Pod name (intergated as static libray or framework).
         - @"" stands for main bundle
         - nil statnd for current bundle which this code reside in

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28D5415B0FAFF22A7820CE15 /* libPods-HelloXCAssets_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A25D7B51DCC1CD61D96EA99D /* libPods-HelloXCAssets_Tests.a */; };
 		4F0C45451FC5CE7200E04471 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0C45441FC5CE7200E04471 /* RootViewController.m */; };
 		4F0C45491FC5CE7800E04471 /* AccessXCAssetsImageInMainBundleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0C45471FC5CE7800E04471 /* AccessXCAssetsImageInMainBundleViewController.m */; };
 		4F0C454D1FC5D68300E04471 /* WCXCAssetsImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0C454C1FC5D68300E04471 /* WCXCAssetsImageTool.m */; };
@@ -33,7 +32,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		C592D78F8DECC947D7B3914E /* libPods-HelloXCAssets_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0651FA1A1118A751D8B7AC4 /* libPods-HelloXCAssets_Example.a */; };
+		8739A7CC4CF9A6CDFD17D5A5 /* libPods-HelloXCAssets_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C06CEE9037BAFBA089E183A /* libPods-HelloXCAssets_Tests.a */; };
+		F854F87126586B6C86158C86 /* libPods-HelloXCAssets_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC5F80624B835CF86128896 /* libPods-HelloXCAssets_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EC5F80624B835CF86128896 /* libPods-HelloXCAssets_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloXCAssets_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		307D4C899FACA8D7FC1F81A7 /* Pods-HelloXCAssets_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloXCAssets_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloXCAssets_Example/Pods-HelloXCAssets_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3EFC3F596713CE7F174CBF1E /* Pods-HelloXCAssets_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloXCAssets_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloXCAssets_Tests/Pods-HelloXCAssets_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4BAF1054D3E9F09B7AA6F4A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -92,10 +93,9 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		785E3AEBE795A8EA55E5FD6A /* Pods-HelloXCAssets_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloXCAssets_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloXCAssets_Tests/Pods-HelloXCAssets_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9086B513F5057DF90BD2B49E /* HelloXCAssets.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HelloXCAssets.podspec; path = ../HelloXCAssets.podspec; sourceTree = "<group>"; };
+		8C06CEE9037BAFBA089E183A /* libPods-HelloXCAssets_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloXCAssets_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9086B513F5057DF90BD2B49E /* HelloXCAssets.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = HelloXCAssets.podspec; path = ../HelloXCAssets.podspec; sourceTree = "<group>"; };
 		94EF3AB1A9FB43BAABD990E1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A25D7B51DCC1CD61D96EA99D /* libPods-HelloXCAssets_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloXCAssets_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0651FA1A1118A751D8B7AC4 /* libPods-HelloXCAssets_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloXCAssets_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8741E46CF198256C3D4CD9B /* Pods-HelloXCAssets_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloXCAssets_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloXCAssets_Example/Pods-HelloXCAssets_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +107,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				C592D78F8DECC947D7B3914E /* libPods-HelloXCAssets_Example.a in Frameworks */,
+				F854F87126586B6C86158C86 /* libPods-HelloXCAssets_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				28D5415B0FAFF22A7820CE15 /* libPods-HelloXCAssets_Tests.a in Frameworks */,
+				8739A7CC4CF9A6CDFD17D5A5 /* libPods-HelloXCAssets_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +195,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				B0651FA1A1118A751D8B7AC4 /* libPods-HelloXCAssets_Example.a */,
-				A25D7B51DCC1CD61D96EA99D /* libPods-HelloXCAssets_Tests.a */,
+				1EC5F80624B835CF86128896 /* libPods-HelloXCAssets_Example.a */,
+				8C06CEE9037BAFBA089E183A /* libPods-HelloXCAssets_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -281,8 +281,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				88EA7E4853BB01928F343F07 /* [CP] Embed Pods Frameworks */,
-				AA6D8373FDEC0AC327F80546 /* [CP] Copy Pods Resources */,
+				2891BA85C195F5A10620F43B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,8 +300,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				688FB5E652D126AF122344FA /* [CP] Embed Pods Frameworks */,
-				B7DCC84D68867AE085E83924 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,7 +318,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = "";
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = daydreamboy;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -334,6 +331,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -371,6 +369,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2891BA85C195F5A10620F43B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloXCAssets_Example/Pods-HelloXCAssets_Example-resources.sh",
+				"${PODS_ROOT}/../../HelloXCAssets/Assets/xcasstsInResourceAttribute1.xcassets",
+				"${PODS_ROOT}/../../HelloXCAssets/Assets/xcasstsInResourceAttribute2.xcassets",
+				"${PODS_ROOT}/../../HelloXCAssets/Assets/icons",
+				"${PODS_CONFIGURATION_BUILD_DIR}/HelloXCAssets/MyXCAssets.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icons",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MyXCAssets.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloXCAssets_Example/Pods-HelloXCAssets_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		420ABD98E761AC003E916BD4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,21 +409,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		688FB5E652D126AF122344FA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloXCAssets_Tests/Pods-HelloXCAssets_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6F4F96F04582E420849A034F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,60 +425,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88EA7E4853BB01928F343F07 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HelloXCAssets_Example/Pods-HelloXCAssets_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HelloXCAssets/HelloXCAssets.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HelloXCAssets.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloXCAssets_Example/Pods-HelloXCAssets_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA6D8373FDEC0AC327F80546 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HelloXCAssets_Example/Pods-HelloXCAssets_Example-resources.sh",
-				"${PODS_ROOT}/../../HelloXCAssets/Assets/xcasstsInResourceAttribute1.xcassets",
-				"${PODS_ROOT}/../../HelloXCAssets/Assets/xcasstsInResourceAttribute2.xcassets",
-				"${PODS_ROOT}/../../HelloXCAssets/Assets/icons",
-				$PODS_CONFIGURATION_BUILD_DIR/HelloXCAssets/MyXCAssets.bundle,
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloXCAssets_Example/Pods-HelloXCAssets_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B7DCC84D68867AE085E83924 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloXCAssets_Tests/Pods-HelloXCAssets_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -549,23 +500,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -589,22 +554,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

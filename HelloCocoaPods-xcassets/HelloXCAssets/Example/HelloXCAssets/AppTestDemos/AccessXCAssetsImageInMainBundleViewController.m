@@ -23,11 +23,11 @@
 }
 
 - (void)test_access_xcassets_image_in_main_bundle {
-    UIImage *image1 = [WCXCAssetsImageTool xcassetsImageNamed:@"picture_select" resourceBundleName:nil podName:@""];
+    UIImage *image1 = [WCXCAssetsImageTool xcassetsImageNamed:@"picture_select" resourceBundleName:@"" podName:@""];
     NSLog(@"image1: %@", image1);
     [self addImage:image1];
     
-    UIImage *image2 = [WCXCAssetsImageTool xcassetsImageNamed:@"AppIcon" resourceBundleName:nil podName:@""];
+    UIImage *image2 = [WCXCAssetsImageTool xcassetsImageNamed:@"AppIcon" resourceBundleName:@"" podName:@""];
     NSLog(@"image2: %@", image2);
     [self addImage:image2];
 }

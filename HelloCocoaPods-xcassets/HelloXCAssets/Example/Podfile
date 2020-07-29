@@ -1,7 +1,7 @@
 platform :ios, '8.0'
 
 # Note: toggle this line to test
-use_frameworks!
+# use_frameworks!
 
 target 'HelloXCAssets_Example' do
   pod 'HelloXCAssets', :path => '../'
@@ -11,4 +11,18 @@ target 'HelloXCAssets_Example' do
 
     
   end
+end
+
+post_install do |installer|
+  project_path = 'HelloXCAssets.xcodeproj'
+  project = Xcodeproj::Project.open(project_path)
+  project.targets.each do |target|
+      build_phase = target.build_phases.find { |bp| bp.display_name == '[CP] Copy Pods Resources' }
+      assets_path = '${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car'
+      if build_phase.present? && build_phase.output_paths.include?(assets_path) == true
+          puts "[Tweak] delete #{assets_path} in phase `#{build_phase.display_name}`"
+          build_phase.output_paths.delete(assets_path)
+      end
+  end
+  project.save(project_path)
 end

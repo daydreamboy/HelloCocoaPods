@@ -78,6 +78,44 @@ iOS系统兼容性测试
 
 
 
+## 6、Xcode 10+编译Pod中xcassets文件夹的问题
+
+Xcode 10+开始引入New Build System，而且是默认设置。如果podspec文件的描述中，使用s.resource字段并且包含有xcassets文件，夹，则和主工程的xcassets文件有输出的冲突。编译会下面的错误，如下
+
+```
+error: Multiple commands produce '/Users/wesley_chen/Library/Developer/Xcode/DerivedData/HelloXCAssets-axqetqlcyzpcqnfcurmdqpssbajb/Build/Products/Debug-iphonesimulator/HelloXCAssets_Example.app/Assets.car':
+
+1) Target 'HelloXCAssets_Example' (project 'HelloXCAssets') has compile command with input '/Users/wesley_chen/GitHub_Projects/HelloCocoaPods/HelloCocoaPods-xcassets/HelloXCAssets/Example/HelloXCAssets/Images.xcassets'
+
+2) That command depends on command in Target 'HelloXCAssets_Example' (project 'HelloXCAssets'): script phase “[CP] Copy Pods Resources”
+```
+
+原因在于[CP] Copy Pods Resources中，有Assets.car的输出，如下图，和Xcode的编译存在冲突。
+
+![](images/xcassets_build_error.png)
+
+手动删除上面这行可以临时解决，也可以用下面脚本[^7]来删除。
+
+```ruby
+post_install do |installer|
+  project_path = 'HelloXCAssets.xcodeproj'
+  project = Xcodeproj::Project.open(project_path)
+  project.targets.each do |target|
+      build_phase = target.build_phases.find { |bp| bp.display_name == '[CP] Copy Pods Resources' }
+      assets_path = '${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car'
+      if build_phase.present? && build_phase.output_paths.include?(assets_path) == true
+          puts "[Tweak] delete #{assets_path} in phase `#{build_phase.display_name}`"
+          build_phase.output_paths.delete(assets_path)
+      end
+  end
+  project.save(project_path)
+end
+```
+
+
+
+
+
 References
 --
 [^1]: https://stackoverflow.com/questions/38117076/asset-catalog-vs-folder-reference-when-to-use-one-or-the-other
@@ -87,4 +125,5 @@ References
 [^5]: http://www.openradar.me/24056523
 [^6]: https://github.com/CocoaPods/CocoaPods/issues/4897
 
+[^7]:https://stackoverflow.com/questions/58928768/xcode-new-build-system-cocoapods-copy-pods-resources-has-assets-car-in-output
 
