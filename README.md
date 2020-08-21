@@ -15,7 +15,26 @@ CocoaPods是一组rubygem，核心的有CocoaPods/CococaPod、CocoaPods/Core、C
 
 Podfile是Pod使用方可以定制的；而podspec是Pod提供方可以定制的
 
-podspec都缓存在./cocoapods文件夹下，podspec文件描述源码或者二进制文件的位置（remote或者local），一般是指向远端的git仓库的一个commit SHA（branch、tag最终会确定成commit SHA）。读取podspec将源码或者二进制文件缓存在~/Library/Caches/CocoaPods.
+podspec都缓存在./cocoapods文件夹下，podspec文件描述源码或者二进制文件的位置（remote或者local），一般是指向远端的git仓库的一个commit SHA（branch、tag最终会确定成commit SHA）。读取podspec将源码或者二进制文件缓存在~/Library/Caches/CocoaPods
+
+
+
+```shell
+$ gem list | grep cocoapods
+cocoapods (1.9.3, 1.8.4, 1.7.5)
+cocoapods-core (1.9.3, 1.8.4, 1.7.5)
+cocoapods-deintegrate (1.0.4)
+cocoapods-dependencies (1.3.0)
+cocoapods-downloader (1.3.0, 1.2.2)
+cocoapods-plugins (1.0.0)
+cocoapods-repo-rsync (1.0.6)
+cocoapods-search (1.0.0)
+cocoapods-stats (1.1.0)
+cocoapods-trunk (1.5.0, 1.4.0)
+cocoapods-try (1.2.0, 1.1.0)
+```
+
+
 
 
 
