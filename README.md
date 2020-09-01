@@ -92,12 +92,48 @@ cocoapods-try (1.2.0, 1.1.0)
 
 
 
+## 5、执行pod命令常见报错
+
+### （1）Unable to determine Swift version for the following pod[^3]
+
+```shell
+[!] Unable to determine Swift version for the following pods:
+
+- `HexColors` does not specify a Swift version and none of the targets (`FaveoHelpdeskPro_ObjC`) integrating it have the `SWIFT_VERSION` attribute set. Please contact the author or set the `SWIFT_VERSION` attribute in at least one of the targets that integrate this pod.
+```
+
+
+
+* 原因分析
+
+某个Pod库的podspec没有指定SWIFT_VERSION，而工程target也没有指定SWIFT_VERSION
+
+
+
+* 解法方法
+
+在对应target添加Dummy.swift文件。默认是Swift的最高版本，如果有需要，指定SWIFT_VERSION的版本
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## References
 
 [^1]:https://guides.cocoapods.org/using/pod-install-vs-update.html
 [^2]:https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+
+[^3]:https://stackoverflow.com/questions/58691345/unable-to-determine-swift-version-for-the-following-pod-error
+
+
 
 
 
