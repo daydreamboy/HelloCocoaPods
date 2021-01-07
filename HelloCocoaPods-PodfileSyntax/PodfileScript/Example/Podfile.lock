@@ -1,0 +1,16 @@
+PODS:
+  - PodfileScript (0.1.0)
+
+DEPENDENCIES:
+  - PodfileScript (from `../`)
+
+EXTERNAL SOURCES:
+  PodfileScript:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PodfileScript: bb994795962aab7da3c734e697c8fdc1558cf7b8
+
+PODFILE CHECKSUM: 1edd529de2a51f485ae4a56984e6d4684507853d
+
+COCOAPODS: 1.9.3

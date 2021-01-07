@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'PodfileScript_Example' do
+  pod 'PodfileScript', :path => '../'
+
+  target 'PodfileScript_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
