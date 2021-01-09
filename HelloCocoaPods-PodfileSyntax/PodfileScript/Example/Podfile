@@ -1,3 +1,5 @@
+require '/Users/wesley_chen/GitHub_Projects/HelloRuby/xcodeproj/23_change_xcconfig_of_main_target.rb'
+
 use_frameworks!
 
 platform :ios, '9.0'
@@ -7,7 +9,12 @@ target 'PodfileScript_Example' do
 
   target 'PodfileScript_Tests' do
     inherit! :search_paths
-
-    
   end
+end
+
+post_install do |installer|
+  PodfileTool.modify_xcconfig_attrs!(__FILE__, 'HEADER_SEARCH_PATHS', nil, [
+    "${PODS_ROOT}/Headers/Public/DTIMAPI-DG/DTIMAPI",
+    "${PODS_ROOT}/Headers/Public/DTIMBasicModule-DG/DTIMBasicModule"
+  ], ["PodfileScript_Example"], true)
 end
