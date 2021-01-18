@@ -1,4 +1,4 @@
-require '/Users/wesley_chen/GitHub_Projects/HelloRuby/xcodeproj/23_change_xcconfig_of_main_target.rb'
+require '/Users/wesley_chen/GitHub_Projects/HelloRuby/xcodeproj/23_change_xcconfig_of_target.rb'
 
 use_frameworks!
 
@@ -13,8 +13,28 @@ target 'PodfileScript_Example' do
 end
 
 post_install do |installer|
-  PodfileTool.modify_xcconfig_attrs!(__FILE__, 'HEADER_SEARCH_PATHS', nil, [
-    "${PODS_ROOT}/Headers/Public/DTIMAPI-DG/DTIMAPI",
-    "${PODS_ROOT}/Headers/Public/DTIMBasicModule-DG/DTIMBasicModule"
-  ], ["PodfileScript_Example"], true)
+  PodfileTool.modify_xcconfig_attrs!(__FILE__, {
+    'HEADER_SEARCH_PATHS' => {
+      :path_to_add => [
+        "${PODS_ROOT}/Headers/Public/DTIMAPI-DG/DTIMAPI",
+        "${PODS_ROOT}/Headers/Public/DTIMBasicModule-DG/DTIMBasicModule"
+      ],
+      :path_to_remove => [
+        "${PODS_CONFIGURATION_BUILD_DIR}/PodfileScript/PodfileScript.framework/Headers"
+      ]
+    },
+    'OTHER_LDFLAGS' => {
+      :library_to_add => [
+        "MyLibrary1",
+        "MyLibrary2",
+      ],
+      :framework_to_add => [
+        "MyFramework1",
+        "MyFramework2",
+      ],
+      :framework_to_remove => [
+        "PodfileScript"
+      ]
+    }
+  }, ["PodfileScript_Example"], true)
 end
