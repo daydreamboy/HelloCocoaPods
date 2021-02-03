@@ -58,7 +58,23 @@ cocoapods-try (1.2.0, 1.1.0)
 
 
 
-## 3、pod install vs. pod update[^1]
+## 3、Podfile语法
+
+
+
+```ruby
+install! 'cocoapods', :deterministic_uuids => false
+```
+
+
+
+
+
+
+
+
+
+## 4、pod install vs. pod update[^1]
 
 ​       pod使用Podfile和Podfile.lock对pod进行版本管理，确保这个两个文件都在版本控制中（under version control）。官方给出pod install和pod update的区别，这里归纳如下
 
@@ -117,6 +133,24 @@ cocoapods-try (1.2.0, 1.1.0)
 
 
 
+
+//
+
+https://medium.com/@aliakhtar_16369/distribute-framework-using-private-cocoapods-a8beac16617d
+
+
+
+```shell
+$ pod repo add my_podspec_repo https://github.com/daydreamboy/podspec.git
+Cloning spec repo `my_podspec_repo` from `https://github.com/daydreamboy/podspec.git`
+$ pod repo list
+...
+my_podspec_repo
+- Type: git (master)
+- URL:  https://github.com/daydreamboy/podspec.git
+- Path: /Users/wesley_chen/.cocoapods/repos/my_podspec_repo
+...
+```
 
 
 
