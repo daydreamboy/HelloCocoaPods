@@ -1,11 +1,16 @@
-require '/Users/wesley_chen/GitHub_Projects/HelloRuby/xcodeproj/23_change_xcconfig_of_target.rb'
+require '~/GitHub_Projects/HelloRuby/ruby_tool/podfile_tool.rb'
+require '~/GitHub_Projects/HelloRuby/ruby_tool/dump_tool.rb'
 
 use_frameworks!
 
 platform :ios, '9.0'
 
+dump_method(:install!)
+
 target 'PodfileScript_Example' do
   pod 'PodfileScript', :path => '../'
+  # pod 'SDWebImage'
+  # pod 'Objective-LevelDB', '0.0.0.1'
 
   target 'PodfileScript_Tests' do
     inherit! :search_paths
@@ -23,6 +28,15 @@ post_install do |installer|
         "${PODS_CONFIGURATION_BUILD_DIR}/PodfileScript/PodfileScript.framework/Headers"
       ]
     },
+    'FRAMEWORK_SEARCH_PATHS' => {
+      :path_to_add => [
+        "${PODS_ROOT}/Framework1",
+        "${PODS_ROOT}/Framework2"
+      ],
+      :path_to_remove => [
+        "${PODS_ROOT}/Framework3"
+      ]
+    },
     'OTHER_LDFLAGS' => {
       :library_to_add => [
         "MyLibrary1",
@@ -34,6 +48,14 @@ post_install do |installer|
       ],
       :framework_to_remove => [
         "PodfileScript"
+      ]
+    },
+    'OTHER_CFLAGS' => {
+      :flag_to_add => [
+        '-fmodule-map-file="${PODS_ROOT}/Headers/Public/Framework1/Framework1.modulemap"'
+      ],
+      :flag_to_remove => [
+        '-fmodule-map-file="${PODS_ROOT}/Headers/Public/Framework2/AMPoFramework2.modulemap"'
       ]
     }
   }, ["PodfileScript_Example"], true)
