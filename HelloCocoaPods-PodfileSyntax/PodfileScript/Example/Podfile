@@ -59,4 +59,6 @@ post_install do |installer|
       ]
     }
   }, ["PodfileScript_Example"], true)
+
+  PodfileTool.resource_copy(__FILE__, nil, './copy_map.json', false)
 end
