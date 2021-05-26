@@ -17,6 +17,10 @@ target 'PodfileScript_Example' do
   end
 end
 
+target 'ShareExtension' do
+  pod 'PodfileScript', :path => '../'
+end
+
 post_install do |installer|
   PodfileTool.modify_xcconfig_attrs!(__FILE__, {
     'HEADER_SEARCH_PATHS' => {
@@ -58,7 +62,12 @@ post_install do |installer|
         '-fmodule-map-file="${PODS_ROOT}/Headers/Public/Framework2/AMPoFramework2.modulemap"'
       ]
     }
-  }, ["PodfileScript_Example"], true)
+  }, ["PodfileScript_Example"], false)
 
   PodfileTool.resource_copy(__FILE__, nil, './copy_map.json', false)
+
+  PodfileTool.modify_pods_project_build_settings_from_installer!(installer, {
+    'APPLICATION_EXTENSION_API_ONLY' => 'NO',
+  }, ['PodfileScript'], false)
+  
 end
