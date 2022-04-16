@@ -1,16 +1,23 @@
 PODS:
+  - Masonry (1.0.0.200406133247)
   - PodfileScript (0.1.0)
 
 DEPENDENCIES:
+  - Masonry
   - PodfileScript (from `../`)
+
+SPEC REPOS:
+  https://code.aliyun.com/mpaas-public/podspecs.git:
+    - Masonry
 
 EXTERNAL SOURCES:
   PodfileScript:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PodfileScript: bb994795962aab7da3c734e697c8fdc1558cf7b8
+  Masonry: a7bc2457b0b351ffbe457916ebab6d57865f09a2
+  PodfileScript: bddb941d1409ec73b13f324fd8173e3244e2fbf9
 
-PODFILE CHECKSUM: d10de930440d1c840ae9ee3c1839a7bd58866332
+PODFILE CHECKSUM: a76fd4c484496fcbbd3289df82a5264c7e791282
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.2

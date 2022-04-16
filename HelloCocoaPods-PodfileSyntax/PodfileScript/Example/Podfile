@@ -1,3 +1,5 @@
+source "https://code.aliyun.com/mpaas-public/podspecs.git"
+
 require '~/GitHub_Projects/HelloRuby/ruby_tool/podfile_tool.rb'
 require '~/GitHub_Projects/HelloRuby/ruby_tool/dump_tool.rb'
 
@@ -6,9 +8,15 @@ use_frameworks!
 platform :ios, '9.0'
 
 dump_method(:install!)
+dump_method(:pod)
+dump_method(:post_install)
+
+PodfileTool.do_pod_hook(nil, true)
 
 target 'PodfileScript_Example' do
-  pod 'PodfileScript', :path => '../'
+  #pod 'PodfileScript', :path => '../'
+  pod 'PodfileScript', 'some-version'
+  pod 'Masonry'
   # pod 'SDWebImage'
   # pod 'Objective-LevelDB', '0.0.0.1'
 
@@ -17,6 +25,10 @@ target 'PodfileScript_Example' do
   end
 end
 
+# Note: Some API not allowed used in App Extension
+# 'sharedApplication' is unavailable: not available on iOS (App Extension) - Use view controller based solutions where appropriate instead.
+# 'openURL:options:completionHandler:' is unavailable: not available on iOS (App Extension)
+# 'openURL:' is unavailable: not available on iOS (App Extension)
 target 'ShareExtension' do
   pod 'PodfileScript', :path => '../'
 end
@@ -43,12 +55,12 @@ post_install do |installer|
     },
     'OTHER_LDFLAGS' => {
       :library_to_add => [
-        "MyLibrary1",
-        "MyLibrary2",
+        # "MyLibrary1",
+        # "MyLibrary2",
       ],
       :framework_to_add => [
-        "MyFramework1",
-        "MyFramework2",
+        # "MyFramework1",
+        # "MyFramework2",
       ],
       :framework_to_remove => [
         "PodfileScript"
@@ -56,10 +68,10 @@ post_install do |installer|
     },
     'OTHER_CFLAGS' => {
       :flag_to_add => [
-        '-fmodule-map-file="${PODS_ROOT}/Headers/Public/Framework1/Framework1.modulemap"'
+        #'-fmodule-map-file="${PODS_ROOT}/Headers/Public/Framework1/Framework1.modulemap"'
       ],
       :flag_to_remove => [
-        '-fmodule-map-file="${PODS_ROOT}/Headers/Public/Framework2/AMPoFramework2.modulemap"'
+        #'-fmodule-map-file="${PODS_ROOT}/Headers/Public/Framework2/AMPoFramework2.modulemap"'
       ]
     }
   }, ["PodfileScript_Example"], false)

@@ -3,7 +3,7 @@
 //  ShareExtension
 //
 //  Created by wesley_chen on 2021/5/22.
-//  Copyright © 2021 晨凉. All rights reserved.
+//  Copyright © 2021 wesley_chen. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
