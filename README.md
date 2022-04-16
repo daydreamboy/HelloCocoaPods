@@ -154,7 +154,49 @@ my_podspec_repo
 
 
 
+## 6、PodfileTool
 
+PodfileTool类是用于Podfile中的一个工具类，用于减少对Podfile侵入业务代码。
+
+PodfileTool支持的feature，如下
+
+* 修改user project的xcconfig，HEADER_SEARCH_PATHS等
+
+* 修改pod project的build setting
+* 支持自定义文件覆盖Pods文件夹下面的任意资源文件
+* 支持hook pod方法，用于根据配置文件来切换源码依赖模式和二进制依赖模式
+
+> 脚本见HelloRuby/ruby_tool/podfile_tool.rb
+
+
+
+用法示例，如下
+
+```ruby
+require '~/GitHub_Projects/HelloRuby/ruby_tool/podfile_tool.rb'
+
+# Feature: hook for pod
+PodfileTool.do_pod_hook(nil, true)
+
+post_install do |installer|
+  # Feature: change xcconfig of user's xcodeproj
+  PodfileTool.modify_xcconfig_attrs!(__FILE__, {
+    'HEADER_SEARCH_PATHS' => {
+      ...
+    },
+  }, ["PodfileScript_Example"], false)
+
+  # Feature: Copy resource files
+  PodfileTool.resource_copy(__FILE__, nil, './copy_map.json', false)
+
+  # Feature: change build setting of Pods.xcodeproj
+  PodfileTool.modify_pods_project_build_settings_from_installer!(installer, {
+    'APPLICATION_EXTENSION_API_ONLY' => 'NO',
+  }, ['PodfileScript'], false)
+end
+```
+
+> Podfile见PodfileScript工程
 
 
 
