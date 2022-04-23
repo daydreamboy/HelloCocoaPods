@@ -1,9 +1,9 @@
 PODS:
   - Masonry (1.0.0.200406133247)
-  - PodfileScript (0.1.0)
+  - PodfileScript (0.1.0):
+    - Masonry
 
 DEPENDENCIES:
-  - Masonry
   - PodfileScript (from `../`)
 
 SPEC REPOS:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: a7bc2457b0b351ffbe457916ebab6d57865f09a2
-  PodfileScript: bddb941d1409ec73b13f324fd8173e3244e2fbf9
+  PodfileScript: a2bfd6c7e09762f1d6f8ced295dc142de376ab1e
 
-PODFILE CHECKSUM: a76fd4c484496fcbbd3289df82a5264c7e791282
+PODFILE CHECKSUM: 79ee9bbe5a9f1c26585b9aa7368587ec1bbddafb
 
 COCOAPODS: 1.11.2

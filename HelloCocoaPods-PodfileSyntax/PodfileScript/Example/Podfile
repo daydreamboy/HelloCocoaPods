@@ -3,20 +3,20 @@ source "https://code.aliyun.com/mpaas-public/podspecs.git"
 require '~/GitHub_Projects/HelloRuby/ruby_tool/podfile_tool.rb'
 require '~/GitHub_Projects/HelloRuby/ruby_tool/dump_tool.rb'
 
-use_frameworks!
+#use_frameworks!
 
 platform :ios, '9.0'
 
-dump_method(:install!)
-dump_method(:pod)
-dump_method(:post_install)
+#dump_method(:install!)
+#dump_method(:pod)
+#dump_method(:post_install)
 
-PodfileTool.do_pod_hook(nil, true)
+PodfileTool.do_pod_hook(nil, false)
 
 target 'PodfileScript_Example' do
   #pod 'PodfileScript', :path => '../'
   pod 'PodfileScript', 'some-version'
-  pod 'Masonry'
+#  pod 'Masonry'
   # pod 'SDWebImage'
   # pod 'Objective-LevelDB', '0.0.0.1'
 

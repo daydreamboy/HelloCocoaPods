@@ -46,6 +46,211 @@ cocoapods-try (1.2.0, 1.1.0)
 
 
 
+### (3) Podfile的DSL解析
+
+Podfile是一个DSL文件，用于描述Pod的使用者，如何集成Pod。
+
+以CocoaPods1.11.2为例，Podfile的解析代码，位于下面位置
+
+```shell
+~/.rvm/gems/ruby-2.6.3/gems/cocoapods-core-1.11.2/lib/cocoapods-core/podfile/dsl.rb
+```
+
+这个文件的所有方法都定义在DSL模块中，如下
+
+```ruby
+module Pod
+  class Podfile
+    module DSL
+      <many methods>
+    end
+  end
+end
+```
+
+其中最常用的pod方法的定义就在这个文件中，如下
+
+```ruby
+def pod(name = nil, *requirements)
+  unless name
+    raise StandardError, 'A dependency requires a name.'
+  end
+
+  current_target_definition.store_pod(name, *requirements)
+end
+```
+
+target方法的定义，如下
+
+```ruby
+def target(name, options = nil)
+  if options
+    raise Informative, "Unsupported options `#{options}` for " \
+      "target `#{name}`."
+  end
+
+  parent = current_target_definition
+  definition = TargetDefinition.new(name, parent)
+  self.current_target_definition = definition
+  yield if block_given?
+ensure
+  self.current_target_definition = parent
+end
+```
+
+另外，CocoaPods提供几个hook方法，最常见的是post_install方法。它的定义，如下
+
+```ruby
+def post_install(&block)
+  raise Informative, 'Specifying multiple `post_install` hooks is unsupported.' if @post_install_callback
+  @post_install_callback = block
+end
+```
+
+说明
+
+> ~/.rvm/gems/ruby-2.6.3/gems/cocoapods-core-1.11.2/lib/cocoapods-core/podfile/dsl.rb，这个文件提供很详细的注释，以便正常使用这些方法。
+
+
+
+#### a. Podfile的方法列表
+
+Podfile的方法列表，如下
+
+<img src="images/podfile_dsl.png" style="zoom:50%; float: left" />
+
+
+
+### (4) podspec的DSL解析
+
+和Podfile一样，podspec也是一个DSL文件。
+
+以CocoaPods1.11.2为例，Podfile的解析代码，位于下面位置
+
+```shell
+~/.rvm/gems/ruby-2.6.3/gems/cocoapods-core-1.11.2/lib/cocoapods-core/specification/dsl.rb
+```
+
+这个文件的所有方法都定义在DSL模块中，如下
+
+```ruby
+module Pod
+  class Specification
+    module DSL
+      <many methods>
+    end
+  end
+end
+```
+
+在了解上面这个文件之前，看看podspec文件的结构，如下
+
+```ruby
+Pod::Spec.new do |s|  
+  s.name             = 'PodfileScript'
+  s.version          = '0.1.0'
+  s.summary          = 'A short description of PodfileScript.'
+
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
+
+  s.description      = <<-DESC
+TODO: Add long description of the pod here.
+                       DESC
+
+  s.homepage         = 'https://github.com/wesley_chen/PodfileScript'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'wesley_chen' => 'wesleychen.cl@alibaba-inc.com' }
+  s.source           = { :git => 'https://github.com/wesley_chen/PodfileScript.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.ios.deployment_target = '9.0'
+
+  s.source_files = 'PodfileScript/Classes/**/*'
+  
+  # s.resource_bundles = {
+  #   'PodfileScript' => ['PodfileScript/Assets/*.png']
+  # }
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
+end
+```
+
+这里Pod::Spec，实际上是Pod::Specification。Spec是Specification的别名[^5]，它定义在~/.rvm/gems/ruby-2.6.3/gems/cocoapods-core-1.11.2/lib/cocoapods-core.rb文件中，如下
+
+```ruby
+module Pod
+  ...
+  # TODO: Fix
+  #
+  Spec = Specification
+end
+```
+
+了解Pod::Spec这个类名之后，podspec采用一个特殊的初始化方法，即
+
+```ruby
+Pod::Spec.new do |s|  
+  ...
+end
+```
+
+new方法带一个block，在Ruby的语法中默认不支持这种形式，但是重定义**initialize**方法，让它支持一个block参数[^6]，那么就可以实现这种方式。简单来说，定义initialize方法，如下
+
+```ruby
+class Foo
+  attr_accessor :bar, :baz
+  def initialize
+    yield self
+  end
+end
+
+Foo.new do |f|
+  f.bar = 123
+  f.baz = 456
+end
+```
+
+实际上podspec也是采用这种方式作为DSL描述。这里不用多说，Pod::Spec.new的block参数s，是Specification对象，而且block体中都是对Specification对象赋值，以及调用Specification对象的特定方法。
+
+
+
+#### a. Specification类
+
+在上面已经看到Specification类的定义在下面位置
+
+```
+~/.rvm/gems/ruby-2.6.3/gems/cocoapods-core-1.11.2/lib/cocoapods-core/specification/dsl.rb
+```
+
+但是这里并不是Specification类的全部，在下面位置也定义Specification类的一些方法。
+
+```shell
+~/.rvm/gems/ruby-2.6.3/gems/cocoapods-core-1.11.2/lib/cocoapods-core/specification.rb
+```
+
+这里解释下这两个文件的区别。在dsl.rb侧重解析podspec文件（包括dependency方法等定义，提供方法用于podspec中使用），而specification.rb侧重处理执行podspec文件（包括from_file方法等）
+
+dsl.rb提供的方法（部分），如下
+
+<img src="images/podspec_dsl.png" style="zoom:50%; float:left" />
+
+
+
+specification.rb提供的方法（部分），如下
+
+<img src="images/specification.png" style="zoom:50%; float:left" />
+
+
+
+
+
 ## 2、podspec语法
 
 老版本的[podspec手册](https://guides.cocoapods.org/syntax/podspec.html)中，有s.xcconfig属性，现在换成s.user\_target\_xcconfig和s.pod\_target\_xcconfig
@@ -86,7 +291,7 @@ install! 'cocoapods', :deterministic_uuids => false
 
 
 
-## 4、Pods文件是否需要版本控制[^2]
+## 5、Pods文件是否需要版本控制[^2]
 
 官方给出的回答是取决于使用者，即可以加入版本控制，也可以不使用版本控制。
 
@@ -108,9 +313,9 @@ install! 'cocoapods', :deterministic_uuids => false
 
 
 
-## 5、执行pod命令常见报错
+## 6、执行pod命令常见报错
 
-### （1）Unable to determine Swift version for the following pod[^3]
+### (1) Unable to determine Swift version for the following pod[^3]
 
 ```shell
 [!] Unable to determine Swift version for the following pods:
@@ -132,9 +337,33 @@ install! 'cocoapods', :deterministic_uuids => false
 
 
 
+### (2) "target has transitive dependencies that include static binaries"[^4]
+
+```shell
+[!] The 'Pods-PodfileScript_Example' target has transitive dependencies that include statically linked binaries: (/Users/wesley_chen/GitHub_Projects/HelloCocoaPods/HelloCocoaPods-PodfileSyntax/PodfileScript/Example/Pods/Masonry/Masonry.framework)
+```
 
 
-//
+
+* 原因分析
+
+Pods-PodfileScript_Example这个target（由CocoaPods生成）是一个动态库，而动态库实际上是不能依赖一个静态库的，因此报错提示这个target有一个间接依赖链接到静态库Masonry。
+
+
+
+* 解决方法
+
+有两种方式：如果Podfile中指定了`use_frameworks!`，则Podfile依赖pod库都应该是动态库。这时需要将Masonry换成动态库的版本。
+
+如果Masonry是静态库，则检查Podfile，并将`use_frameworks!`注释掉
+
+
+
+
+
+
+
+// TODO
 
 https://medium.com/@aliakhtar_16369/distribute-framework-using-private-cocoapods-a8beac16617d
 
@@ -154,7 +383,7 @@ my_podspec_repo
 
 
 
-## 6、PodfileTool
+## 7、PodfileTool
 
 PodfileTool类是用于Podfile中的一个工具类，用于减少对Podfile侵入业务代码。
 
@@ -208,6 +437,10 @@ end
 [^2]:https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 
 [^3]:https://stackoverflow.com/questions/58691345/unable-to-determine-swift-version-for-the-following-pod-error
+
+[^4]:https://stackoverflow.com/questions/42611599/cocoapods-target-has-transitive-dependencies-that-include-static-binaries
+[^5]:https://stackoverflow.com/questions/21244375/class-name-aliases-in-ruby
+[^6]:https://stackoverflow.com/questions/34065817/initialize-an-object-with-a-block
 
 
 

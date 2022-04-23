@@ -6,7 +6,22 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
+# require '~/GitHub_Projects/HelloRuby/ruby_tool/dump_tool.rb'
+dump_method_list(Pod::Spec)
+dump_method(:convert_keys_to_string, Pod::Spec, true)
+
 Pod::Spec.new do |s|
+  # dump_call_stack
+  # dump_method_list(s)
+
+  #dump_method(:dependency)
+  #dump_object(s.dependency)
+  # puts s.method(:dependency)
+  # dump_object(s.method(:dependency))
+
+  #dump_method(:dependency, s.class, false)
+  #dump_method(:dependency, Pod::Spec, false)
+  
   s.name             = 'PodfileScript'
   s.version          = '0.1.0'
   s.summary          = 'A short description of PodfileScript.'
@@ -39,4 +54,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry'
 end
