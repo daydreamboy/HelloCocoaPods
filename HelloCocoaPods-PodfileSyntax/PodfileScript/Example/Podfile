@@ -11,7 +11,10 @@ platform :ios, '9.0'
 #dump_method(:pod)
 #dump_method(:post_install)
 
+dump_method(:from_ruby, Pod::Podfile, true)
+
 PodfileTool.do_pod_hook(nil, false)
+PodfileTool.do_dependency_hook(nil, true)
 
 target 'PodfileScript_Example' do
   #pod 'PodfileScript', :path => '../'

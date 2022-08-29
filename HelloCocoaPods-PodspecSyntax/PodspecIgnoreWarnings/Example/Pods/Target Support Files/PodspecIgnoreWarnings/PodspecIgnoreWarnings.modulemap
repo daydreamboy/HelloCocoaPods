@@ -1,0 +1,6 @@
+framework module PodspecIgnoreWarnings {
+  umbrella header "PodspecIgnoreWarnings-umbrella.h"
+
+  export *
+  module * { export * }
+}

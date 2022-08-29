@@ -263,6 +263,18 @@ specification.rb提供的方法（部分），如下
 
 
 
+### (1) 常见podspec设置
+
+禁用Documentation Issue类型的warning，如下
+
+```ruby
+s.pod_target_xcconfig = { 'CLANG_WARN_DOCUMENTATION_COMMENTS' => 'NO' }
+```
+
+
+
+
+
 ## 3、Podfile语法
 
 
@@ -426,6 +438,18 @@ end
 ```
 
 > Podfile见PodfileScript工程
+
+
+
+## 8、常用路径
+
+~/.cocoapods/repos
+
+~/Library/Caches/CocoaPods/Pods
+
+
+
+TODO
 
 
 

@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'PodspecIgnoreWarnings_Example' do
+  pod 'PodspecIgnoreWarnings', :path => '../', :inhibit_warnings => true
+
+  target 'PodspecIgnoreWarnings_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

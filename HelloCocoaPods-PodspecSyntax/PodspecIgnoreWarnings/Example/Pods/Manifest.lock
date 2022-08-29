@@ -1,0 +1,16 @@
+PODS:
+  - PodspecIgnoreWarnings (0.1.0)
+
+DEPENDENCIES:
+  - PodspecIgnoreWarnings (from `../`)
+
+EXTERNAL SOURCES:
+  PodspecIgnoreWarnings:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PodspecIgnoreWarnings: 7712a39fa4ae200c1c2eef93db018852aa9e8430
+
+PODFILE CHECKSUM: cb775b0b9c08bb9e5158f71b569e5b953b0b26c3
+
+COCOAPODS: 1.11.2

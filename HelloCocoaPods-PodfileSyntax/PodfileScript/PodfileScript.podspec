@@ -7,8 +7,8 @@
 #
 
 # require '~/GitHub_Projects/HelloRuby/ruby_tool/dump_tool.rb'
-dump_method_list(Pod::Spec)
-dump_method(:convert_keys_to_string, Pod::Spec, true)
+#dump_method_list(Pod::Spec)
+#dump_method(:convert_keys_to_string, Pod::Spec, true)
 
 Pod::Spec.new do |s|
   # dump_call_stack

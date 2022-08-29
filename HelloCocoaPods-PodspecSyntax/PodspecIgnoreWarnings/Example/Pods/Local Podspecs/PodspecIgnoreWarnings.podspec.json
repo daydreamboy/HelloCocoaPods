@@ -1,0 +1,22 @@
+{
+  "name": "PodspecIgnoreWarnings",
+  "version": "0.1.0",
+  "summary": "A short description of PodspecIgnoreWarnings.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/\u001b[1;35;40m\u001b[Kacct\u001b[m\u001b[K<blob>=daydreamboy/PodspecIgnoreWarnings",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "\u001b[1;35;40m\u001b[Kacct\u001b[m\u001b[K<blob>=daydreamboy": "wesleychen.cl@alibaba-inc.com"
+  },
+  "source": {
+    "git": "https://github.com/\u001b[1;35;40m\u001b[Kacct\u001b[m\u001b[K<blob>=daydreamboy/PodspecIgnoreWarnings.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "PodspecIgnoreWarnings/Classes/**/*"
+}
