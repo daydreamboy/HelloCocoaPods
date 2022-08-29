@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05B36C00D169FE8FFCA11A30228F83D9 /* PodspecIgnoreWarnings-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B4C52F082CDA79D1E6D2153E97BF93 /* PodspecIgnoreWarnings-dummy.m */; };
 		072D54BF9BFA321F2621355E26176240 /* PodspecIgnoreWarnings.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F68B04192305D792749ED0D052A2F0 /* PodspecIgnoreWarnings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07467FC181177CD1EE484F2186BD0246 /* Pods-PodspecIgnoreWarnings_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 307F2ABDCCCFAD660B952D294B403D11 /* Pods-PodspecIgnoreWarnings_Tests-dummy.m */; };
+		136BAF2D4516500A39ECB847D58FB896 /* PodspecIgnoreWarnings-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B4C52F082CDA79D1E6D2153E97BF93 /* PodspecIgnoreWarnings-dummy.m */; };
 		16E65D2EE368A113FFB039E9A082D590 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		23E07572669BE87A1816832E66C6D5BA /* Pods-PodspecIgnoreWarnings_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C5935E3F2ED2BA2ECB6BFF7D3322FE /* Pods-PodspecIgnoreWarnings_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F693D17E87D606AC450AF482F8DBBF6 /* Pods-PodspecIgnoreWarnings_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A94CD27319091C79218632ED64D485 /* Pods-PodspecIgnoreWarnings_Example-dummy.m */; };
-		55DDB653023175FA6EB2640015439DCF /* SomeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BC3480CAF72BAA0775256ACE2AF1E7 /* SomeManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		602AB217146CB1DFF8393E8C3FEC5F23 /* Pods-PodspecIgnoreWarnings_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C01192BA69882A743EA2EC15DE9041 /* Pods-PodspecIgnoreWarnings_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D54029CC06EA67B95A2CB4D9181BE3FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E1F6A1A0F3C691AB5A607E231C4FD9FC /* PodspecIgnoreWarnings-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28BD8AE3156FC6BFCFFEDD91709445A6 /* PodspecIgnoreWarnings-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2FFF82F5FDF05FEEA377B454CA2ADA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E55C72CA2FC202B62FA26866A0EFAC47 /* SomeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8705FA55D27B78965B005479C82FFE /* SomeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F70465DC477F1C5F7436905AC102C078 /* SomeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BC3480CAF72BAA0775256ACE2AF1E7 /* SomeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -283,7 +283,7 @@
 			buildConfigurationList = BFC0254B42B0F7C540ABF2475C3DC183 /* Build configuration list for PBXNativeTarget "PodspecIgnoreWarnings" */;
 			buildPhases = (
 				817AA5733E76E14A97661127A08EC1BC /* Headers */,
-				AECE55A86252B934AAD8DCD53E9EC62A /* Sources */,
+				44F44C48193C51B21BBEE98FC13EE8C4 /* Sources */,
 				05315C0FAED0BDA8DA123B03548B032A /* Frameworks */,
 				DFD4874C28941558A24497FD3CB281A8 /* Resources */,
 			);
@@ -369,20 +369,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		44F44C48193C51B21BBEE98FC13EE8C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136BAF2D4516500A39ECB847D58FB896 /* PodspecIgnoreWarnings-dummy.m in Sources */,
+				F70465DC477F1C5F7436905AC102C078 /* SomeManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		645AA6264EF0919FB6C32D90495C483B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2F693D17E87D606AC450AF482F8DBBF6 /* Pods-PodspecIgnoreWarnings_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AECE55A86252B934AAD8DCD53E9EC62A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05B36C00D169FE8FFCA11A30228F83D9 /* PodspecIgnoreWarnings-dummy.m in Sources */,
-				55DDB653023175FA6EB2640015439DCF /* SomeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
