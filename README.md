@@ -271,7 +271,9 @@ specification.rb提供的方法（部分），如下
 s.pod_target_xcconfig = { 'CLANG_WARN_DOCUMENTATION_COMMENTS' => 'NO' }
 ```
 
+说明
 
+> 设置`inhibit_all_warnings!`或者`pod 'xxx', :inhibit_warnings => true`，也可以禁用Documentation Issue类型的warning[^7]
 
 
 
@@ -465,6 +467,8 @@ TODO
 [^4]:https://stackoverflow.com/questions/42611599/cocoapods-target-has-transitive-dependencies-that-include-static-binaries
 [^5]:https://stackoverflow.com/questions/21244375/class-name-aliases-in-ruby
 [^6]:https://stackoverflow.com/questions/34065817/initialize-an-object-with-a-block
+
+[^7]:https://stackoverflow.com/a/27903042
 
 
 
