@@ -7,6 +7,7 @@
 //
 
 #import "WCViewController.h"
+#import <PodspecIgnoreWarnings/PodspecIgnoreWarnings.h>
 
 @interface WCViewController ()
 
