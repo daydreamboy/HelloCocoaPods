@@ -33,5 +33,8 @@ TODO: Add long description of the pod here.
   s.source_files = 'PodspecIgnoreWarnings/Classes/**/*'
   
   # Note: CLANG_WARN_DOCUMENTATION_COMMENTS disable warnings for Documentation Issue
-  s.pod_target_xcconfig = { 'CLANG_WARN_DOCUMENTATION_COMMENTS' => 'NO' }
+#  s.pod_target_xcconfig = {
+#    'CLANG_WARN_DOCUMENTATION_COMMENTS' => 'NO',
+#    'CLANG_WARN_STRICT_PROTOTYPES' => 'NO'
+#  }
 end

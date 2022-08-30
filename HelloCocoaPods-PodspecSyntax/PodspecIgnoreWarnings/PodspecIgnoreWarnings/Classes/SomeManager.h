@@ -9,10 +9,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// Note: make a warning on purpose
+// warning: this block declaration is not a prototype [-Wstrict-prototypes]
+// Build Setting: CLANG_WARN_STRICT_PROTOTYPES = NO
+typedef void (^ActivateBlock)();
+
 @interface SomeManager : NSObject
 
 // Note: make a warning on purpose
 // warning: empty paragraph passed to '@param' command [-Wdocumentation]
+// Build Setting: CLANG_WARN_DOCUMENTATION_COMMENTS = NO
 /**
  @param bizType
  */

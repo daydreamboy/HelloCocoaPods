@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "AnotherManager.h"
 #import "PodspecIgnoreWarnings.h"
 #import "SomeManager.h"
 

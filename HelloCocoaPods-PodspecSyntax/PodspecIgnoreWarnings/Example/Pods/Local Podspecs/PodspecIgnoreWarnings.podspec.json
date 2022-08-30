@@ -18,8 +18,5 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "PodspecIgnoreWarnings/Classes/**/*",
-  "pod_target_xcconfig": {
-    "CLANG_WARN_DOCUMENTATION_COMMENTS": "NO"
-  }
+  "source_files": "PodspecIgnoreWarnings/Classes/**/*"
 }

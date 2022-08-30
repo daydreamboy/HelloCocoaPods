@@ -7,80 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		072D54BF9BFA321F2621355E26176240 /* PodspecIgnoreWarnings.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F68B04192305D792749ED0D052A2F0 /* PodspecIgnoreWarnings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07467FC181177CD1EE484F2186BD0246 /* Pods-PodspecIgnoreWarnings_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 307F2ABDCCCFAD660B952D294B403D11 /* Pods-PodspecIgnoreWarnings_Tests-dummy.m */; };
-		136BAF2D4516500A39ECB847D58FB896 /* PodspecIgnoreWarnings-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B4C52F082CDA79D1E6D2153E97BF93 /* PodspecIgnoreWarnings-dummy.m */; };
-		16E65D2EE368A113FFB039E9A082D590 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		23E07572669BE87A1816832E66C6D5BA /* Pods-PodspecIgnoreWarnings_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C5935E3F2ED2BA2ECB6BFF7D3322FE /* Pods-PodspecIgnoreWarnings_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24CCF6C9F3171918A85C616EED94146D /* SomeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4BA94A389851E38A03D59CBB7B708E /* SomeManager.m */; };
 		2F693D17E87D606AC450AF482F8DBBF6 /* Pods-PodspecIgnoreWarnings_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A94CD27319091C79218632ED64D485 /* Pods-PodspecIgnoreWarnings_Example-dummy.m */; };
 		602AB217146CB1DFF8393E8C3FEC5F23 /* Pods-PodspecIgnoreWarnings_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C01192BA69882A743EA2EC15DE9041 /* Pods-PodspecIgnoreWarnings_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A6169F242EEF09F73B50591F3A96348 /* PodspecIgnoreWarnings-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAC2EC1DC37CC57CFB6EADC5E989CED /* PodspecIgnoreWarnings-dummy.m */; };
+		A02EEEEBB966B41117266B80C86ECCC5 /* PodspecIgnoreWarnings-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 287A787BEBB1243BC66AB6F2D5AED83C /* PodspecIgnoreWarnings-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1DF9B5A8F86D469BF662B58910446CE /* AnotherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E4FD3D01B6E3EDF20BA6D5D1A1D66B /* AnotherManager.m */; };
+		D0BB864ED122801C317A6BD907E19627 /* PodspecIgnoreWarnings.h in Headers */ = {isa = PBXBuildFile; fileRef = B8D54CEC3B4232D9548171E806F9D5C1 /* PodspecIgnoreWarnings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2D221ACE4B426089C84BD17C74BE844 /* AnotherManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9042612CF6F91FCA99826AB61BE78DC1 /* AnotherManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D54029CC06EA67B95A2CB4D9181BE3FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E1F6A1A0F3C691AB5A607E231C4FD9FC /* PodspecIgnoreWarnings-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28BD8AE3156FC6BFCFFEDD91709445A6 /* PodspecIgnoreWarnings-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2FFF82F5FDF05FEEA377B454CA2ADA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E55C72CA2FC202B62FA26866A0EFAC47 /* SomeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8705FA55D27B78965B005479C82FFE /* SomeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F70465DC477F1C5F7436905AC102C078 /* SomeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BC3480CAF72BAA0775256ACE2AF1E7 /* SomeManager.m */; };
+		F4BD342173DBBD91D079BFF4373E6400 /* SomeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 70B143C574C0874F9A16D73D509DBE87 /* SomeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F59BC065A557C8AA9721E4E5166E6A4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5CDBB82644B4ED062BB9010F29E29B48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0CFE2A2E9A168A0AEC4945DBEC9E7759;
-			remoteInfo = PodspecIgnoreWarnings;
-		};
-		63BC6F9FF8A85BF4CAA177E2121A3B7C /* PBXContainerItemProxy */ = {
+		9E57F828018A1254D0D05ED799BDC954 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 02BC20594253742145A0C88611D66043;
 			remoteInfo = "Pods-PodspecIgnoreWarnings_Example";
 		};
+		F373A4F9D7EDF207A171DED6404BCB7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CFE2A2E9A168A0AEC4945DBEC9E7759;
+			remoteInfo = PodspecIgnoreWarnings;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		14C01192BA69882A743EA2EC15DE9041 /* Pods-PodspecIgnoreWarnings_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PodspecIgnoreWarnings_Tests-umbrella.h"; sourceTree = "<group>"; };
 		14C5935E3F2ED2BA2ECB6BFF7D3322FE /* Pods-PodspecIgnoreWarnings_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PodspecIgnoreWarnings_Example-umbrella.h"; sourceTree = "<group>"; };
-		19B4C52F082CDA79D1E6D2153E97BF93 /* PodspecIgnoreWarnings-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PodspecIgnoreWarnings-dummy.m"; sourceTree = "<group>"; };
+		19E4FD3D01B6E3EDF20BA6D5D1A1D66B /* AnotherManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnotherManager.m; path = PodspecIgnoreWarnings/Classes/AnotherManager.m; sourceTree = "<group>"; };
 		20C12D3ED1C52F140B894534D5239D40 /* Pods-PodspecIgnoreWarnings_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PodspecIgnoreWarnings_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		215461096D5C4DB8125ECC7665C41F8F /* PodspecIgnoreWarnings-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PodspecIgnoreWarnings-Info.plist"; sourceTree = "<group>"; };
-		28BD8AE3156FC6BFCFFEDD91709445A6 /* PodspecIgnoreWarnings-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PodspecIgnoreWarnings-umbrella.h"; sourceTree = "<group>"; };
+		287A787BEBB1243BC66AB6F2D5AED83C /* PodspecIgnoreWarnings-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PodspecIgnoreWarnings-umbrella.h"; sourceTree = "<group>"; };
 		2990E32E0086E36071072D119EE57AD4 /* Pods-PodspecIgnoreWarnings_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PodspecIgnoreWarnings_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2BEF9CB61CD4676B496F94B163C6E732 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2B4BA94A389851E38A03D59CBB7B708E /* SomeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SomeManager.m; path = PodspecIgnoreWarnings/Classes/SomeManager.m; sourceTree = "<group>"; };
 		307F2ABDCCCFAD660B952D294B403D11 /* Pods-PodspecIgnoreWarnings_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PodspecIgnoreWarnings_Tests-dummy.m"; sourceTree = "<group>"; };
 		3E7FC9874CE521C8947B2EFD72085738 /* PodspecIgnoreWarnings */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PodspecIgnoreWarnings; path = PodspecIgnoreWarnings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A94CD27319091C79218632ED64D485 /* Pods-PodspecIgnoreWarnings_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PodspecIgnoreWarnings_Example-dummy.m"; sourceTree = "<group>"; };
 		43EBF534D67726C1118F0F6DC982A282 /* Pods-PodspecIgnoreWarnings_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PodspecIgnoreWarnings_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5252EE7A2D5BB7DE50823401D143E92A /* Pods-PodspecIgnoreWarnings_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PodspecIgnoreWarnings_Tests.modulemap"; sourceTree = "<group>"; };
 		54991DFF047BBB17FA9BD9FC30E875CA /* Pods-PodspecIgnoreWarnings_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PodspecIgnoreWarnings_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5B9A77E96E8FEFC4F2B3BDE4CCA25303 /* PodspecIgnoreWarnings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PodspecIgnoreWarnings.debug.xcconfig; sourceTree = "<group>"; };
-		72BC3480CAF72BAA0775256ACE2AF1E7 /* SomeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SomeManager.m; path = PodspecIgnoreWarnings/Classes/SomeManager.m; sourceTree = "<group>"; };
+		5CB9F6274B675E9CECE6B992288DED26 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6116AB49B68269D5C279869EFBC77DFB /* PodspecIgnoreWarnings-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PodspecIgnoreWarnings-prefix.pch"; sourceTree = "<group>"; };
+		70B143C574C0874F9A16D73D509DBE87 /* SomeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SomeManager.h; path = PodspecIgnoreWarnings/Classes/SomeManager.h; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		78303F8C66AD1CB67AF0CD71119E3DD3 /* Pods-PodspecIgnoreWarnings_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PodspecIgnoreWarnings_Example-frameworks.sh"; sourceTree = "<group>"; };
 		829FF9ADE4E54BD5AB55161A4CF9B11D /* Pods-PodspecIgnoreWarnings_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PodspecIgnoreWarnings_Tests"; path = Pods_PodspecIgnoreWarnings_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85595E06157C0C384F0721E4EB6406F3 /* PodspecIgnoreWarnings.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PodspecIgnoreWarnings.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9042612CF6F91FCA99826AB61BE78DC1 /* AnotherManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnotherManager.h; path = PodspecIgnoreWarnings/Classes/AnotherManager.h; sourceTree = "<group>"; };
+		928955D2FCF5BB0A1E0DF4609D7CFF9D /* PodspecIgnoreWarnings-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PodspecIgnoreWarnings-Info.plist"; sourceTree = "<group>"; };
 		93B3CB39DFC1210C6759045270CD3B0A /* Pods-PodspecIgnoreWarnings_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PodspecIgnoreWarnings_Example-Info.plist"; sourceTree = "<group>"; };
-		964AF97B79DB4BDFBF5D2BEBEF188B52 /* PodspecIgnoreWarnings.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PodspecIgnoreWarnings.modulemap; sourceTree = "<group>"; };
-		9CDB61853EFF1935ECE2B6D3A20BC0C2 /* PodspecIgnoreWarnings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PodspecIgnoreWarnings.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AFB808690B3EF22ECAF5E1DC1FA97433 /* Pods-PodspecIgnoreWarnings_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PodspecIgnoreWarnings_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B7597D90E6C24A68526A777C3A548A75 /* Pods-PodspecIgnoreWarnings_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PodspecIgnoreWarnings_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BAC8D2F6583A731B7DEDEA4CAAA4BF31 /* PodspecIgnoreWarnings.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PodspecIgnoreWarnings.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B8D54CEC3B4232D9548171E806F9D5C1 /* PodspecIgnoreWarnings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PodspecIgnoreWarnings.h; path = PodspecIgnoreWarnings/Classes/PodspecIgnoreWarnings.h; sourceTree = "<group>"; };
+		B9354476C66CA6C54285FA1722BA4BA1 /* PodspecIgnoreWarnings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PodspecIgnoreWarnings.release.xcconfig; sourceTree = "<group>"; };
+		BC6DF68703658E38E69C7151DA1CF883 /* PodspecIgnoreWarnings.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PodspecIgnoreWarnings.modulemap; sourceTree = "<group>"; };
 		C10BE34B790E6B62CA8B917DD0CEF7A5 /* Pods-PodspecIgnoreWarnings_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PodspecIgnoreWarnings_Example"; path = Pods_PodspecIgnoreWarnings_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87FA61CBCC8F98FAFD02BC64380AE2E /* Pods-PodspecIgnoreWarnings_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PodspecIgnoreWarnings_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA93CC129E0DAA270AE6732F09C1C41D /* Pods-PodspecIgnoreWarnings_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PodspecIgnoreWarnings_Tests-Info.plist"; sourceTree = "<group>"; };
+		EB076BAB8A652D4D48E5CABA96E1A86E /* PodspecIgnoreWarnings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PodspecIgnoreWarnings.debug.xcconfig; sourceTree = "<group>"; };
 		EE5F5B299C19B123C402226C78DDF1D7 /* Pods-PodspecIgnoreWarnings_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PodspecIgnoreWarnings_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F5F68B04192305D792749ED0D052A2F0 /* PodspecIgnoreWarnings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PodspecIgnoreWarnings.h; path = PodspecIgnoreWarnings/Classes/PodspecIgnoreWarnings.h; sourceTree = "<group>"; };
-		FAD6E580F7320732D7F627CCFD7B88FD /* PodspecIgnoreWarnings-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PodspecIgnoreWarnings-prefix.pch"; sourceTree = "<group>"; };
+		FAAC2EC1DC37CC57CFB6EADC5E989CED /* PodspecIgnoreWarnings-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PodspecIgnoreWarnings-dummy.m"; sourceTree = "<group>"; };
 		FD7AF15E75E01E0A9AD1FCEE927EE4F3 /* Pods-PodspecIgnoreWarnings_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PodspecIgnoreWarnings_Example.modulemap"; sourceTree = "<group>"; };
-		FD8705FA55D27B78965B005479C82FFE /* SomeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SomeManager.h; path = PodspecIgnoreWarnings/Classes/SomeManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		05315C0FAED0BDA8DA123B03548B032A /* Frameworks */ = {
+		18C482D75C81D3AA83532DA86FC3FD05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16E65D2EE368A113FFB039E9A082D590 /* Foundation.framework in Frameworks */,
+				F59BC065A557C8AA9721E4E5166E6A4D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,36 +107,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		081763445168D4B3CF4BF7D378CB3E94 /* PodspecIgnoreWarnings */ = {
-			isa = PBXGroup;
-			children = (
-				F5F68B04192305D792749ED0D052A2F0 /* PodspecIgnoreWarnings.h */,
-				FD8705FA55D27B78965B005479C82FFE /* SomeManager.h */,
-				72BC3480CAF72BAA0775256ACE2AF1E7 /* SomeManager.m */,
-				084A8D9C27328EB4EC37E76D3AD584DF /* Pod */,
-				FCC1F9D38606FAF312B597CDBD68C7C4 /* Support Files */,
-			);
-			name = PodspecIgnoreWarnings;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		084A8D9C27328EB4EC37E76D3AD584DF /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				2BEF9CB61CD4676B496F94B163C6E732 /* LICENSE */,
-				BAC8D2F6583A731B7DEDEA4CAAA4BF31 /* PodspecIgnoreWarnings.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		0A40E0B7B933769361F7809D6D82E211 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				081763445168D4B3CF4BF7D378CB3E94 /* PodspecIgnoreWarnings */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		0CB65AD88CDCE178CB9F073A18156133 /* Pods-PodspecIgnoreWarnings_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +123,21 @@
 			path = "Target Support Files/Pods-PodspecIgnoreWarnings_Tests";
 			sourceTree = "<group>";
 		};
+		0ED498CD43B0A0A81B16639A74CF9E33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC6DF68703658E38E69C7151DA1CF883 /* PodspecIgnoreWarnings.modulemap */,
+				FAAC2EC1DC37CC57CFB6EADC5E989CED /* PodspecIgnoreWarnings-dummy.m */,
+				928955D2FCF5BB0A1E0DF4609D7CFF9D /* PodspecIgnoreWarnings-Info.plist */,
+				6116AB49B68269D5C279869EFBC77DFB /* PodspecIgnoreWarnings-prefix.pch */,
+				287A787BEBB1243BC66AB6F2D5AED83C /* PodspecIgnoreWarnings-umbrella.h */,
+				EB076BAB8A652D4D48E5CABA96E1A86E /* PodspecIgnoreWarnings.debug.xcconfig */,
+				B9354476C66CA6C54285FA1722BA4BA1 /* PodspecIgnoreWarnings.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PodspecIgnoreWarnings";
+			sourceTree = "<group>";
+		};
 		3B6D7443A08A7DBD969E204AAEA2EFE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,12 +148,44 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5469E480ABED5A5BC96198F3002439B9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A0EB89D344FA06A75111B3178CD7DEA /* PodspecIgnoreWarnings */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5A0EB89D344FA06A75111B3178CD7DEA /* PodspecIgnoreWarnings */ = {
+			isa = PBXGroup;
+			children = (
+				9042612CF6F91FCA99826AB61BE78DC1 /* AnotherManager.h */,
+				19E4FD3D01B6E3EDF20BA6D5D1A1D66B /* AnotherManager.m */,
+				B8D54CEC3B4232D9548171E806F9D5C1 /* PodspecIgnoreWarnings.h */,
+				70B143C574C0874F9A16D73D509DBE87 /* SomeManager.h */,
+				2B4BA94A389851E38A03D59CBB7B708E /* SomeManager.m */,
+				92EE81C68044CB7E81957A81F4C3AB94 /* Pod */,
+				0ED498CD43B0A0A81B16639A74CF9E33 /* Support Files */,
+			);
+			name = PodspecIgnoreWarnings;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		92EE81C68044CB7E81957A81F4C3AB94 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5CB9F6274B675E9CECE6B992288DED26 /* LICENSE */,
+				85595E06157C0C384F0721E4EB6406F3 /* PodspecIgnoreWarnings.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CB3513CFCEC2272EF4DC93BF38FFA334 /* Targets Support Files */ = {
@@ -197,7 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				0A40E0B7B933769361F7809D6D82E211 /* Development Pods */,
+				5469E480ABED5A5BC96198F3002439B9 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				3B6D7443A08A7DBD969E204AAEA2EFE8 /* Products */,
 				CB3513CFCEC2272EF4DC93BF38FFA334 /* Targets Support Files */,
@@ -212,39 +233,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FCC1F9D38606FAF312B597CDBD68C7C4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				964AF97B79DB4BDFBF5D2BEBEF188B52 /* PodspecIgnoreWarnings.modulemap */,
-				19B4C52F082CDA79D1E6D2153E97BF93 /* PodspecIgnoreWarnings-dummy.m */,
-				215461096D5C4DB8125ECC7665C41F8F /* PodspecIgnoreWarnings-Info.plist */,
-				FAD6E580F7320732D7F627CCFD7B88FD /* PodspecIgnoreWarnings-prefix.pch */,
-				28BD8AE3156FC6BFCFFEDD91709445A6 /* PodspecIgnoreWarnings-umbrella.h */,
-				5B9A77E96E8FEFC4F2B3BDE4CCA25303 /* PodspecIgnoreWarnings.debug.xcconfig */,
-				9CDB61853EFF1935ECE2B6D3A20BC0C2 /* PodspecIgnoreWarnings.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PodspecIgnoreWarnings";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		817AA5733E76E14A97661127A08EC1BC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				072D54BF9BFA321F2621355E26176240 /* PodspecIgnoreWarnings.h in Headers */,
-				E1F6A1A0F3C691AB5A607E231C4FD9FC /* PodspecIgnoreWarnings-umbrella.h in Headers */,
-				E55C72CA2FC202B62FA26866A0EFAC47 /* SomeManager.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B40F026AF9019D2E76AD047C9CF3B2CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				602AB217146CB1DFF8393E8C3FEC5F23 /* Pods-PodspecIgnoreWarnings_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E87A88001131D8207139926449EA5490 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D221ACE4B426089C84BD17C74BE844 /* AnotherManager.h in Headers */,
+				D0BB864ED122801C317A6BD907E19627 /* PodspecIgnoreWarnings.h in Headers */,
+				A02EEEEBB966B41117266B80C86ECCC5 /* PodspecIgnoreWarnings-umbrella.h in Headers */,
+				F4BD342173DBBD91D079BFF4373E6400 /* SomeManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +278,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				183244EC75BC44CC5C5978C748B0F8B9 /* PBXTargetDependency */,
+				1C64E50D5EFCC1B3D684CD12DD65BBED /* PBXTargetDependency */,
 			);
 			name = "Pods-PodspecIgnoreWarnings_Example";
 			productName = Pods_PodspecIgnoreWarnings_Example;
@@ -280,12 +287,12 @@
 		};
 		0CFE2A2E9A168A0AEC4945DBEC9E7759 /* PodspecIgnoreWarnings */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFC0254B42B0F7C540ABF2475C3DC183 /* Build configuration list for PBXNativeTarget "PodspecIgnoreWarnings" */;
+			buildConfigurationList = 0E615301A8A44CC3637678FCB51898EF /* Build configuration list for PBXNativeTarget "PodspecIgnoreWarnings" */;
 			buildPhases = (
-				817AA5733E76E14A97661127A08EC1BC /* Headers */,
-				44F44C48193C51B21BBEE98FC13EE8C4 /* Sources */,
-				05315C0FAED0BDA8DA123B03548B032A /* Frameworks */,
-				DFD4874C28941558A24497FD3CB281A8 /* Resources */,
+				E87A88001131D8207139926449EA5490 /* Headers */,
+				7D19E526396E3620666F6C44143A1A63 /* Sources */,
+				18C482D75C81D3AA83532DA86FC3FD05 /* Frameworks */,
+				7EA8FD183521CDDBF8C0740F12B56B46 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -308,7 +315,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4776438A6E4AEF82A5826410DE326D85 /* PBXTargetDependency */,
+				00AAEDCBE5B5EC5A9E2BDD9E6E0C6E41 /* PBXTargetDependency */,
 			);
 			name = "Pods-PodspecIgnoreWarnings_Tests";
 			productName = Pods_PodspecIgnoreWarnings_Tests;
@@ -352,7 +359,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFD4874C28941558A24497FD3CB281A8 /* Resources */ = {
+		7EA8FD183521CDDBF8C0740F12B56B46 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,20 +376,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		44F44C48193C51B21BBEE98FC13EE8C4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				136BAF2D4516500A39ECB847D58FB896 /* PodspecIgnoreWarnings-dummy.m in Sources */,
-				F70465DC477F1C5F7436905AC102C078 /* SomeManager.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		645AA6264EF0919FB6C32D90495C483B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2F693D17E87D606AC450AF482F8DBBF6 /* Pods-PodspecIgnoreWarnings_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D19E526396E3620666F6C44143A1A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DF9B5A8F86D469BF662B58910446CE /* AnotherManager.m in Sources */,
+				9A6169F242EEF09F73B50591F3A96348 /* PodspecIgnoreWarnings-dummy.m in Sources */,
+				24CCF6C9F3171918A85C616EED94146D /* SomeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,21 +405,53 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		183244EC75BC44CC5C5978C748B0F8B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PodspecIgnoreWarnings;
-			target = 0CFE2A2E9A168A0AEC4945DBEC9E7759 /* PodspecIgnoreWarnings */;
-			targetProxy = 5CDBB82644B4ED062BB9010F29E29B48 /* PBXContainerItemProxy */;
-		};
-		4776438A6E4AEF82A5826410DE326D85 /* PBXTargetDependency */ = {
+		00AAEDCBE5B5EC5A9E2BDD9E6E0C6E41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-PodspecIgnoreWarnings_Example";
 			target = 02BC20594253742145A0C88611D66043 /* Pods-PodspecIgnoreWarnings_Example */;
-			targetProxy = 63BC6F9FF8A85BF4CAA177E2121A3B7C /* PBXContainerItemProxy */;
+			targetProxy = 9E57F828018A1254D0D05ED799BDC954 /* PBXContainerItemProxy */;
+		};
+		1C64E50D5EFCC1B3D684CD12DD65BBED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PodspecIgnoreWarnings;
+			target = 0CFE2A2E9A168A0AEC4945DBEC9E7759 /* PodspecIgnoreWarnings */;
+			targetProxy = F373A4F9D7EDF207A171DED6404BCB7F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		055234B5E898A7F84A6929EC79DD7923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9354476C66CA6C54285FA1722BA4BA1 /* PodspecIgnoreWarnings.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings.modulemap";
+				PRODUCT_MODULE_NAME = PodspecIgnoreWarnings;
+				PRODUCT_NAME = PodspecIgnoreWarnings;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		084A957444D0F2698D75502CE9ECD1A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54991DFF047BBB17FA9BD9FC30E875CA /* Pods-PodspecIgnoreWarnings_Example.debug.xcconfig */;
@@ -444,69 +484,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		13003A4E2107409F6E080E4364B9A8E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B9A77E96E8FEFC4F2B3BDE4CCA25303 /* PodspecIgnoreWarnings.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings.modulemap";
-				PRODUCT_MODULE_NAME = PodspecIgnoreWarnings;
-				PRODUCT_NAME = PodspecIgnoreWarnings;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4BB9AC4EA84BD377713A11706328D356 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CDB61853EFF1935ECE2B6D3A20BC0C2 /* PodspecIgnoreWarnings.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings.modulemap";
-				PRODUCT_MODULE_NAME = PodspecIgnoreWarnings;
-				PRODUCT_NAME = PodspecIgnoreWarnings;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		55683299036795B93BA4B615365E75E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -602,6 +579,37 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		89C1C40F0A1CF5F661955E2A062A1DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB076BAB8A652D4D48E5CABA96E1A86E /* PodspecIgnoreWarnings.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PodspecIgnoreWarnings/PodspecIgnoreWarnings.modulemap";
+				PRODUCT_MODULE_NAME = PodspecIgnoreWarnings;
+				PRODUCT_NAME = PodspecIgnoreWarnings;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B33B8DF814D41BE8269B8D1734527BEC /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -740,6 +748,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E615301A8A44CC3637678FCB51898EF /* Build configuration list for PBXNativeTarget "PodspecIgnoreWarnings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C1C40F0A1CF5F661955E2A062A1DEB /* Debug */,
+				055234B5E898A7F84A6929EC79DD7923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -763,15 +780,6 @@
 			buildConfigurations = (
 				084A957444D0F2698D75502CE9ECD1A0 /* Debug */,
 				B990629619CC45257BFD10BC940046A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BFC0254B42B0F7C540ABF2475C3DC183 /* Build configuration list for PBXNativeTarget "PodspecIgnoreWarnings" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				13003A4E2107409F6E080E4364B9A8E8 /* Debug */,
-				4BB9AC4EA84BD377713A11706328D356 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

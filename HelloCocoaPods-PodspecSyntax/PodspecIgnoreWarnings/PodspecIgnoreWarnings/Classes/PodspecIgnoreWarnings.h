@@ -10,4 +10,6 @@
 
 #import <PodspecIgnoreWarnings/SomeManager.h>
 
+#import "AnotherManager.h"
+
 #endif /* PodspecIgnoreWarnings_h */

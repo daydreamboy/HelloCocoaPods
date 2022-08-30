@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'PodspecIgnoreWarnings_Example' do
-  #pod 'PodspecIgnoreWarnings', :path => '../', :inhibit_warnings => true
+#  pod 'PodspecIgnoreWarnings', :path => '../', :inhibit_warnings => true
   pod 'PodspecIgnoreWarnings', :path => '../'
 
   target 'PodspecIgnoreWarnings_Tests' do
