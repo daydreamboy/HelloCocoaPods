@@ -17,8 +17,8 @@ PodfileTool.do_pod_hook(nil, false)
 PodfileTool.do_dependency_hook(nil, true)
 
 target 'PodfileScript_Example' do
-  #pod 'PodfileScript', :path => '../'
-  pod 'PodfileScript', 'some-version'
+  pod 'PodfileScript', :path => '../'
+  #pod 'PodfileScript', 'some-version'
 #  pod 'Masonry'
   # pod 'SDWebImage'
   # pod 'Objective-LevelDB', '0.0.0.1'
