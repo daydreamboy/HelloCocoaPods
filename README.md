@@ -263,7 +263,7 @@ specification.rb提供的方法（部分），如下
 
 
 
-### (1) 常见podspec设置
+### (1) 常见podspec配置
 
 禁用Documentation Issue类型的warning，如下
 
@@ -274,6 +274,58 @@ s.pod_target_xcconfig = { 'CLANG_WARN_DOCUMENTATION_COMMENTS' => 'NO' }
 说明
 
 > 设置`inhibit_all_warnings!`或者`pod 'xxx', :inhibit_warnings => true`，也可以禁用Documentation Issue类型的warning[^7]
+
+
+
+### (2) 常见podspec问题
+
+#### a. resources在指定subspec方式的pod时不会生效
+
+举个例子，如下
+
+```ruby
+s.default_subspecs = 'Pod_Core', 'Pod_Extra'
+s.resources = [
+  'SomePod/Assets/*.bundle',
+  'SomePod/Assets/*.xcassets',
+  'SomePod/Classes/**/*.xib',
+]
+
+s.subspec 'Pod_Core' do |ss|
+  ss.source_files  = 'SomePod/Classes/Core/**/*.{h,m}'
+end
+
+s.subspec 'Pod_Extra' do |ss|
+  ss.dependency 'SomePod/Pod_Core'
+  ss.source_files  = 'SomePod/Classes/Extra/**/*.{h,m}'
+end
+```
+
+SomePod有两个subspec，分别是Pod_Core和Pod_Extra。如果只引用pod 'SomePod/Pod_Core'，则s.resources对应的资源并不会加载。
+
+解决方法，如下
+
+```ruby
+s.default_subspecs = 'Pod_Core', 'Pod_Extra'
+
+s.subspec 'Pod_Core' do |ss|
+  ss.source_files  = 'SomePod/Classes/Core/**/*.{h,m}'
+  ss.resources = [
+    'SomePod/Assets/*.bundle',
+    'SomePod/Assets/*.xcassets',
+    'SomePod/Classes/**/*.xib',
+	]
+end
+
+s.subspec 'Pod_Extra' do |ss|
+  ss.dependency 'SomePod/Pod_Core'
+  ss.source_files  = 'SomePod/Classes/Extra/**/*.{h,m}'
+end
+```
+
+如果有subspec，则resources也需要放在对应subspec的下面。
+
+
 
 
 
