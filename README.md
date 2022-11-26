@@ -497,9 +497,23 @@ end
 
 ## 8、常用路径
 
-~/.cocoapods/repos
+podspec文件的存放路径
 
+```
+~/.cocoapods/repos
+```
+
+
+
+Pod产物的存放路径
+
+```
 ~/Library/Caches/CocoaPods/Pods
+```
+
+
+
+
 
 
 
