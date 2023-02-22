@@ -341,11 +341,76 @@ install! 'cocoapods', :deterministic_uuids => false
 
 
 
+### (1) hook回调
+
+#### a. post_install
+
+```ruby
+post_install do |installer|
+  puts "post_install..."
+end
+```
+
+
+
+#### b. post_integrate
+
+参考SO这个回答[^8]，知道存在post_integrate回调。示例如下
+
+```ruby
+post_integrate do |installer|
+  puts "post_integrate..."
+  # some change after project write to disk
+end
+```
+
+官方文档对post_integrate的描述[^9]，如下
+
+* 方法：Pod::Podfile::DSL#post_integrate
+* 定义：lib/cocoapods-core/podfile/dsl.rb
+* 签名：#post_integrate(&block) ⇒ void
+
+作用是在project写入到磁盘后，可以用这个hook回调执行后续的事情。
+
+> This hook allows you to make changes after the project is written to disk.
+
+
+
+post_install和post_integrate调用顺序，如下
+
+```shell
+...
+Installing Masonry 1.0.0
+Generating Pods project
+post_install...
+Integrating client project
+post_integrate...
+...
+```
 
 
 
 
-## 4、pod install vs. pod update[^1]
+
+## 4、CocoaPods源码分析
+
+### (1) CocoaPods Core[^10]
+
+Provides support for working with the following models:
+
+- `Pod::Specification` - [Podspec Syntax Reference](https://guides.cocoapods.org/syntax/podspec.html).
+- `Pod::Podfile` - [Podfile Syntax Reference](https://guides.cocoapods.org/syntax/podfile.html).
+- `Pod::Source` - collections of podspec files like the [CocoaPods Spec repo](https://github.com/CocoaPods/Specs).
+
+
+
+
+
+
+
+## 5、常见Q&A
+
+### (1) pod install vs. pod update[^1]
 
 ​       pod使用Podfile和Podfile.lock对pod进行版本管理，确保这个两个文件都在版本控制中（under version control）。官方给出pod install和pod update的区别，这里归纳如下
 
@@ -357,7 +422,7 @@ install! 'cocoapods', :deterministic_uuids => false
 
 
 
-## 5、Pods文件是否需要版本控制[^2]
+### (2) Pods文件是否需要版本控制[^2]
 
 官方给出的回答是取决于使用者，即可以加入版本控制，也可以不使用版本控制。
 
@@ -513,11 +578,11 @@ Pod产物的存放路径
 
 
 
+## 9、常用文档地址
 
+CocoaPods官方文档：https://www.rubydoc.info/github/CocoaPods/Cocoapods
 
-
-
-TODO
+CocoaPods Core组件的官方文档：https://www.rubydoc.info/github/CocoaPods/Core/index
 
 
 
@@ -535,6 +600,10 @@ TODO
 [^6]:https://stackoverflow.com/questions/34065817/initialize-an-object-with-a-block
 
 [^7]:https://stackoverflow.com/a/27903042
+
+[^8]:https://stackoverflow.com/a/66153210
+[^9]:https://www.rubydoc.info/github/CocoaPods/Core/Pod%2FPodfile%2FDSL:post_integrate
+[^10]:https://www.rubydoc.info/github/CocoaPods/Core/file/README.md
 
 
 

@@ -37,6 +37,8 @@ target 'ShareExtension' do
 end
 
 post_install do |installer|
+  puts "post_install..."
+
   PodfileTool.modify_xcconfig_attrs!(__FILE__, {
     'HEADER_SEARCH_PATHS' => {
       :path_to_add => [
@@ -85,4 +87,16 @@ post_install do |installer|
     'APPLICATION_EXTENSION_API_ONLY' => 'NO',
   }, ['PodfileScript'], false)
   
+end
+
+# @see https://stackoverflow.com/a/66153210
+post_integrate do |installer|
+  puts "post_integrate..."
+  dump_object(installer)
+
+  # project =  installer.aggregate_targets[0].user_project
+  # project.targets.each do |target|
+  #   inject_shell_script_build_phase(target)
+  # end
+  # project.save
 end
