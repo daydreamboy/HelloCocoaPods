@@ -73,14 +73,14 @@ https://krakendev.io/blog/4-xcode-asset-catalog-secrets-you-need-to-know
 
 WCXCAssetsImageTool支持car文件在4种位置的情况，支持代码在main bundle或者CocoaPods（静态库或者动态库）编译。
 
-##### TODO
+### TODO
 iOS系统兼容性测试
 
 
 
 ## 6、Xcode 10+编译Pod中xcassets文件夹的问题
 
-Xcode 10+开始引入New Build System，而且是默认设置。如果podspec文件的描述中，使用s.resource字段并且包含有xcassets文件，夹，则和主工程的xcassets文件有输出的冲突。编译会下面的错误，如下
+Xcode 10+开始引入New Build System，而且是默认设置。如果podspec文件的描述中，使用s.resource字段并且包含有xcassets文件夹，则和主工程的xcassets文件有输出的冲突。编译会下面的错误，如下
 
 ```
 error: Multiple commands produce '/Users/wesley_chen/Library/Developer/Xcode/DerivedData/HelloXCAssets-axqetqlcyzpcqnfcurmdqpssbajb/Build/Products/Debug-iphonesimulator/HelloXCAssets_Example.app/Assets.car':
