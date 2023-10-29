@@ -560,7 +560,57 @@ end
 
 
 
-## 8、常用路径
+## 8、pod命令
+
+### (1) pod repo
+
+pod repo类型，如下
+
+```properties
+xxx-inc-specs
+- Type: git (tags/release1.0)
+- URL:  git@gitlab.xxx-inc.com:yyy/specs.git
+- Path: /Users/wesley_chen/.cocoapods/repos/xxx-inc-specs
+
+master
+- Type: git (remotes/origin/master)
+- URL:  https://github.com/CocoaPods/Specs.git
+- Path: /Users/wesley_chen/.cocoapods/repos/master
+
+my_podspec_repo
+- Type: git (master)
+- URL:  https://github.com/daydreamboy/podspec.git
+- Path: /Users/wesley_chen/.cocoapods/repos/my_podspec_repo
+
+podspec.xxx-inc
+- Type: file system
+- URL:  
+- Path: /Users/wesley_chen/.cocoapods/repos/podspec.xxx-inc
+
+trunk
+- Type: CDN
+- URL:  https://cdn.cocoapods.org/
+- Path: /Users/wesley_chen/.cocoapods/repos/trunk
+```
+
+
+
+```
+.source
+.url
+.git（文件夹）
+.rsync_config
+```
+
+
+
+
+
+
+
+## 附录
+
+### (1) 常用路径
 
 podspec文件的存放路径
 
@@ -578,7 +628,7 @@ Pod产物的存放路径
 
 
 
-## 9、常用文档地址
+### (2) 常用文档地址
 
 CocoaPods官方文档：https://www.rubydoc.info/github/CocoaPods/Cocoapods
 
