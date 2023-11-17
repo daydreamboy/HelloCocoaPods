@@ -1,0 +1,16 @@
+PODS:
+  - AwesomeSDK (0.1.0)
+
+DEPENDENCIES:
+  - AwesomeSDK (from `./AwesomeSDK/AwesomeSDK_development.podspec`)
+
+EXTERNAL SOURCES:
+  AwesomeSDK:
+    :path: "./AwesomeSDK/AwesomeSDK_development.podspec"
+
+SPEC CHECKSUMS:
+  AwesomeSDK: a04a8598b9ab0e187dc6971f92db34bca667e141
+
+PODFILE CHECKSUM: b65a0b1679cee1817e94e349a15a9f15053b43a0
+
+COCOAPODS: 1.11.3

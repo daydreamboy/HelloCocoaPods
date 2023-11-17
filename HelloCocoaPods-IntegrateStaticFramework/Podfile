@@ -1,0 +1,11 @@
+platform :ios, '10.0'
+
+target 'HelloCocoaPods-IntegrateStaticFramework' do
+  use_frameworks!
+
+  # For binrary integration, use static framework
+  #pod 'AwesomeSDK', :path => "./AwesomeSDK/AwesomeSDK_static_framework.podspec"
+  
+  # For source integration, use source code
+  pod 'AwesomeSDK', :path => "./AwesomeSDK/AwesomeSDK_development.podspec"
+end

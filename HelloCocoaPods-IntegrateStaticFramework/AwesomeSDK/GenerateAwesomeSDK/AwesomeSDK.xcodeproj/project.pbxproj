@@ -45,7 +45,7 @@
 		4F7492D92B070F3E00582B7E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		4F7492DB2B070F3E00582B7E /* UseAwesomeSDKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseAwesomeSDKViewController.m; sourceTree = "<group>"; };
 		4F7492DC2B070F3E00582B7E /* UseAwesomeSDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseAwesomeSDKViewController.h; sourceTree = "<group>"; };
-		4F7493372B0765F700582B7E /* AwesomeSDK_dynamic_framework.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = AwesomeSDK_dynamic_framework.podspec; path = ../AwesomeSDK_dynamic_framework.podspec; sourceTree = "<group>"; };
+		4F7493362B0765E800582B7E /* AwesomeSDK_static_framework.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = AwesomeSDK_static_framework.podspec; path = ../AwesomeSDK_static_framework.podspec; sourceTree = "<group>"; };
 		50B6175FC4567FA7D3AA5F8D /* Pods-GenerateAwesomeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenerateAwesomeSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GenerateAwesomeSDK/Pods-GenerateAwesomeSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GenerateAwesomeSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenerateAwesomeSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -204,7 +204,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				4F7493372B0765F700582B7E /* AwesomeSDK_dynamic_framework.podspec */,
+				4F7493362B0765E800582B7E /* AwesomeSDK_static_framework.podspec */,
 				4F7492D72B070CC000582B7E /* AwesomeSDK_development.podspec */,
 				68D3EC70A1CA507AC1BDD1DF /* README.md */,
 				9046EC0878E07BF2D6EA9551 /* LICENSE */,
@@ -223,7 +223,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				7B6ED87E4816FBA48CBC11B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,24 +312,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7B6ED87E4816FBA48CBC11B4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GenerateAwesomeSDK/Pods-GenerateAwesomeSDK-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AwesomeSDK/AwesomeSDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AwesomeSDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenerateAwesomeSDK/Pods-GenerateAwesomeSDK-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CDF4B5473787D976E90CF824 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
