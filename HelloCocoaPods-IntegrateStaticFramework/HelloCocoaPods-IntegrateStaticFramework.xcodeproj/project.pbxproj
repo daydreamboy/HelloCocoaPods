@@ -9,27 +9,25 @@
 /* Begin PBXBuildFile section */
 		0071E02830F61E7F9C8F63E4 /* Pods_HelloCocoaPods_IntegrateStaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B631F93862BBE21E81BECCFE /* Pods_HelloCocoaPods_IntegrateStaticFramework.framework */; };
 		4F74931E2B07602600582B7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F74931D2B07602600582B7E /* AppDelegate.m */; };
-		4F7493212B07602600582B7E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7493202B07602600582B7E /* SceneDelegate.m */; };
-		4F7493242B07602600582B7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7493232B07602600582B7E /* ViewController.m */; };
-		4F7493272B07602600582B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7493252B07602600582B7E /* Main.storyboard */; };
 		4F7493292B07602800582B7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7493282B07602800582B7E /* Assets.xcassets */; };
 		4F74932C2B07602800582B7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F74932A2B07602800582B7E /* LaunchScreen.storyboard */; };
 		4F74932F2B07602800582B7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F74932E2B07602800582B7E /* main.m */; };
+		4F74933E2B076A5200582B7E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F74933C2B076A5200582B7E /* RootViewController.m */; };
+		4F7493412B076AC400582B7E /* UseAwesomeSDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7493402B076AC400582B7E /* UseAwesomeSDKViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F7493192B07602600582B7E /* HelloCocoaPods-IntegrateStaticFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HelloCocoaPods-IntegrateStaticFramework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F74931C2B07602600582B7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F74931D2B07602600582B7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4F74931F2B07602600582B7E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		4F7493202B07602600582B7E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		4F7493222B07602600582B7E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4F7493232B07602600582B7E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4F7493262B07602600582B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F7493282B07602800582B7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F74932B2B07602800582B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F74932D2B07602800582B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F74932E2B07602800582B7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F74933B2B076A5200582B7E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		4F74933C2B076A5200582B7E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		4F74933F2B076AC400582B7E /* UseAwesomeSDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseAwesomeSDKViewController.h; sourceTree = "<group>"; };
+		4F7493402B076AC400582B7E /* UseAwesomeSDKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseAwesomeSDKViewController.m; sourceTree = "<group>"; };
 		6805E1F647AF2191F09BFC5B /* Pods-HelloCocoaPods-IntegrateStaticFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCocoaPods-IntegrateStaticFramework.debug.xcconfig"; path = "Target Support Files/Pods-HelloCocoaPods-IntegrateStaticFramework/Pods-HelloCocoaPods-IntegrateStaticFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		74BD4C4EE7809BD9BEC93189 /* Pods-HelloCocoaPods-IntegrateStaticFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCocoaPods-IntegrateStaticFramework.release.xcconfig"; path = "Target Support Files/Pods-HelloCocoaPods-IntegrateStaticFramework/Pods-HelloCocoaPods-IntegrateStaticFramework.release.xcconfig"; sourceTree = "<group>"; };
 		B631F93862BBE21E81BECCFE /* Pods_HelloCocoaPods_IntegrateStaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloCocoaPods_IntegrateStaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,13 +66,11 @@
 		4F74931B2B07602600582B7E /* HelloCocoaPods-IntegrateStaticFramework */ = {
 			isa = PBXGroup;
 			children = (
+				4F7493382B076A5200582B7E /* AppTestDemos */,
 				4F74931C2B07602600582B7E /* AppDelegate.h */,
 				4F74931D2B07602600582B7E /* AppDelegate.m */,
-				4F74931F2B07602600582B7E /* SceneDelegate.h */,
-				4F7493202B07602600582B7E /* SceneDelegate.m */,
-				4F7493222B07602600582B7E /* ViewController.h */,
-				4F7493232B07602600582B7E /* ViewController.m */,
-				4F7493252B07602600582B7E /* Main.storyboard */,
+				4F74933B2B076A5200582B7E /* RootViewController.h */,
+				4F74933C2B076A5200582B7E /* RootViewController.m */,
 				4F7493282B07602800582B7E /* Assets.xcassets */,
 				4F74932A2B07602800582B7E /* LaunchScreen.storyboard */,
 				4F74932D2B07602800582B7E /* Info.plist */,
@@ -83,13 +79,21 @@
 			path = "HelloCocoaPods-IntegrateStaticFramework";
 			sourceTree = "<group>";
 		};
+		4F7493382B076A5200582B7E /* AppTestDemos */ = {
+			isa = PBXGroup;
+			children = (
+				4F74933F2B076AC400582B7E /* UseAwesomeSDKViewController.h */,
+				4F7493402B076AC400582B7E /* UseAwesomeSDKViewController.m */,
+			);
+			path = AppTestDemos;
+			sourceTree = "<group>";
+		};
 		8EC005A7C45B6CF0B021FA5A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				6805E1F647AF2191F09BFC5B /* Pods-HelloCocoaPods-IntegrateStaticFramework.debug.xcconfig */,
 				74BD4C4EE7809BD9BEC93189 /* Pods-HelloCocoaPods-IntegrateStaticFramework.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,7 +165,6 @@
 			files = (
 				4F74932C2B07602800582B7E /* LaunchScreen.storyboard in Resources */,
 				4F7493292B07602800582B7E /* Assets.xcassets in Resources */,
-				4F7493272B07602600582B7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,24 +200,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F7493242B07602600582B7E /* ViewController.m in Sources */,
 				4F74931E2B07602600582B7E /* AppDelegate.m in Sources */,
+				4F74933E2B076A5200582B7E /* RootViewController.m in Sources */,
+				4F7493412B076AC400582B7E /* UseAwesomeSDKViewController.m in Sources */,
 				4F74932F2B07602800582B7E /* main.m in Sources */,
-				4F7493212B07602600582B7E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4F7493252B07602600582B7E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F7493262B07602600582B7E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4F74932A2B07602800582B7E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -344,11 +339,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "HelloCocoaPods-IntegrateStaticFramework/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,11 +364,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "HelloCocoaPods-IntegrateStaticFramework/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -1,13 +1,16 @@
 //
 //  AppDelegate.h
-//  HelloCocoaPods-IntegrateStaticFramework
+//  AppTest
 //
-//  Created by wesley_chen on 2023/11/17.
+//  Created by wesley chen on 16/4/13.
+//
 //
 
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 
 @end
