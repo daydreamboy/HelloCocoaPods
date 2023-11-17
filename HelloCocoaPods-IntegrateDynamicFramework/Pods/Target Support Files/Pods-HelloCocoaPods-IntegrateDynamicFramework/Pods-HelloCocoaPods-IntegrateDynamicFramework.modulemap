@@ -1,0 +1,6 @@
+framework module Pods_HelloCocoaPods_IntegrateDynamicFramework {
+  umbrella header "Pods-HelloCocoaPods-IntegrateDynamicFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
