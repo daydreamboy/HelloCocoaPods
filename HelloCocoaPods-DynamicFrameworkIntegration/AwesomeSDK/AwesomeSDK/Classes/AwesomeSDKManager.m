@@ -9,6 +9,6 @@
 
 @implementation AwesomeSDKManager
 + (void)doSomething {
-    NSLog(@"test");
+    NSLog(@"AwesomeSDKManager doSomething");
 }
 @end

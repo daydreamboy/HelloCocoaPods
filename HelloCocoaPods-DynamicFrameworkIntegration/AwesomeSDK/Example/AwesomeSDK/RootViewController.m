@@ -8,7 +8,7 @@
 
 #import "RootViewController.h"
 
-#import "Demo1ViewController.h"
+#import "UseAwesomeSDKViewController.h"
 
 @interface RootViewController ()
 @property (nonatomic, strong) NSArray *titles;
@@ -31,11 +31,11 @@
 
     // MARK: Configure titles and classes for table view
     _titles = @[
-        @"Demo1ViewController's title",
+        @"Use AwesomeSDK",
         @"call a test method",
     ];
     _classes = @[
-        @"Demo1ViewController",
+        [UseAwesomeSDKViewController class],
         @"testMethod",
     ];
 }
@@ -65,20 +65,9 @@
     return cell;
 }
 
-- (void)pushViewController:(NSString *)viewControllerClass {
-    NSAssert([viewControllerClass isKindOfClass:[NSString class]], @"%@ is not NSString", viewControllerClass);
-    
-    Class class = NSClassFromString(viewControllerClass);
-    if (class && [class isSubclassOfClass:[UIViewController class]]) {
-        
-        UIViewController *vc = [[class alloc] init];
-        vc.title = _titles[[_classes indexOfObject:viewControllerClass]];
-        
-        self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
-    else {
-        SEL selector = NSSelectorFromString(viewControllerClass);
+- (void)pushViewController:(id)objectOrclass {
+    if ([objectOrclass isKindOfClass:[NSString class]]) {
+        SEL selector = NSSelectorFromString(objectOrclass);
         if ([self respondsToSelector:selector]) {
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Warc-performSelector-leaks"
@@ -86,8 +75,15 @@
 #pragma GCC diagnostic pop
         }
         else {
-            NSAssert(NO, @"can't handle selector `%@`", viewControllerClass);
+            NSAssert(NO, @"can't handle selector `%@`", objectOrclass);
         }
+    }
+    else if (objectOrclass && [objectOrclass isSubclassOfClass:[UIViewController class]]) {
+        UIViewController *vc = [[objectOrclass alloc] init];
+        vc.title = _titles[[_classes indexOfObject:objectOrclass]];
+        
+        self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

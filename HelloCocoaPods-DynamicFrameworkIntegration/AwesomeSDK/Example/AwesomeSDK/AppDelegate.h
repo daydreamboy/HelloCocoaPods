@@ -1,15 +1,17 @@
 //
 //  AppDelegate.h
-//  AwesomeSDK
+//  AppTest
 //
-//  Created by daydreamboy on 11/07/2017.
-//  Copyright (c) 2017 daydreamboy. All rights reserved.
+//  Created by wesley chen on 16/4/13.
+//
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+
 @end
+
