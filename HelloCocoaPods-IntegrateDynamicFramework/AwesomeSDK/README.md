@@ -1,17 +1,27 @@
-## AwesomeSDK
+# AwesomeSDK (Dynamic)
 
-### podspec
+[TOC]
+
+## 1、介绍AwesomeSDK
+
+AwesomeSDK，是个Dummy工程，用于CocoaPods集成这个工程，进行测试
+
+
+
+### a. podspec
 
 AwesomeSDK提供两种podspec
 
 * AwesomeSDK_development.podspec，支持源码集成
 * AwesomeSDK_production.podspec，支持framework集成，framework放在Product文件夹下，使用Example工程来生成framework。
 
-### 拷贝framework到Product文件夹
+
+
+### b. 自动拷贝framework到Product文件夹
 
 Example/Podfile
 
-```
+```ruby
 ...
 # Configurations
 run_script_name = '[Podfile] Copy To Product Folder'

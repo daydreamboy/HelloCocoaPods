@@ -2,7 +2,7 @@ use_frameworks!
 
 platform :ios, '10.0'
 
-target 'AwesomeSDK_Example' do
+target 'GenerateAwesomeSDK' do
   pod 'AwesomeSDK', :path => '../AwesomeSDK_development.podspec'
 
   target 'AwesomeSDK_Tests' do

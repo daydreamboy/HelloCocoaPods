@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AwesomeSDK_ExampleVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AwesomeSDK_ExampleVersionString[];
+FOUNDATION_EXPORT double Pods_GenerateAwesomeSDKVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_GenerateAwesomeSDKVersionString[];
 

@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-HelloCocoaPods-IntegrateDynamicFramework/Pods-HelloCocoaPods-IntegrateDynamicFramework-frameworks.sh
-${BUILT_PRODUCTS_DIR}/AwesomeSDK/AwesomeSDK.framework
+${PODS_ROOT}/../AwesomeSDK/Product/AwesomeSDK/AwesomeSDK.framework

@@ -3,9 +3,9 @@ platform :ios, '10.0'
 target 'HelloCocoaPods-IntegrateDynamicFramework' do
   use_frameworks!
   
-  # For production mode
-  # pod 'AwesomeSDK', :path => "./AwesomeSDK/AwesomeSDK_production.podspec"
+  # For binrary integration, use dynamic framework
+  pod 'AwesomeSDK', :path => "./AwesomeSDK/AwesomeSDK_dynamic_framework.podspec"
   
-  # For development mode
-  pod 'AwesomeSDK', :path => "./AwesomeSDK/AwesomeSDK_development.podspec"
+  # For source integration, use source code
+  #pod 'AwesomeSDK', :path => "./AwesomeSDK/AwesomeSDK_development.podspec"
 end
