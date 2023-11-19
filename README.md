@@ -263,7 +263,19 @@ specification.rb提供的方法（部分），如下
 
 
 
-### (1) 常见podspec配置
+### (1) 常用字段
+
+| 字段              | 示例                               | 作用                            |
+| ----------------- | ---------------------------------- | ------------------------------- |
+| cocoapods_version | spec.cocoapods_version = '>= 0.36' | 当spec支持的最低CocoaPods版本号 |
+
+
+
+
+
+### (2) 常见任务
+
+#### a. 禁用Documentation Issue类型的warning
 
 禁用Documentation Issue类型的warning，如下
 
@@ -277,7 +289,7 @@ s.pod_target_xcconfig = { 'CLANG_WARN_DOCUMENTATION_COMMENTS' => 'NO' }
 
 
 
-### (2) 常见podspec问题
+### (3) 常见podspec问题
 
 #### a. resources在指定subspec方式的pod时不会生效
 

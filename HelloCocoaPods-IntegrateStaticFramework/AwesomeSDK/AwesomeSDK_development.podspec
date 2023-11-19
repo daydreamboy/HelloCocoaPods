@@ -34,6 +34,7 @@ TODO: Add long description of the pod here.
   
   # Note: support on CocoaPods v1.5, see https://github.com/CocoaPods/CocoaPods/issues/7428
   s.static_framework = true
+  s.cocoapods_version = '>= 1.5'
   
   # s.resource_bundles = {
   #   'AwesomeSDK' => ['AwesomeSDK/Assets/*.png']
