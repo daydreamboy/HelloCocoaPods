@@ -271,25 +271,7 @@ specification.rb提供的方法（部分），如下
 
 
 
-
-
-### (2) 常见任务
-
-#### a. 禁用Documentation Issue类型的warning
-
-禁用Documentation Issue类型的warning，如下
-
-```ruby
-s.pod_target_xcconfig = { 'CLANG_WARN_DOCUMENTATION_COMMENTS' => 'NO' }
-```
-
-说明
-
-> 设置`inhibit_all_warnings!`或者`pod 'xxx', :inhibit_warnings => true`，也可以禁用Documentation Issue类型的warning[^7]
-
-
-
-### (3) 常见podspec问题
+### (2) 常见podspec问题
 
 #### a. resources在指定subspec方式的pod时不会生效
 
@@ -404,7 +386,32 @@ post_integrate...
 
 
 
-## 4、CocoaPods源码分析
+## 4、常见任务
+
+### (1) 禁用Documentation Issue类型的warning
+
+禁用Documentation Issue类型的warning，如下
+
+```ruby
+s.pod_target_xcconfig = { 'CLANG_WARN_DOCUMENTATION_COMMENTS' => 'NO' }
+```
+
+说明
+
+> 设置`inhibit_all_warnings!`或者`pod 'xxx', :inhibit_warnings => true`，也可以禁用Documentation Issue类型的warning[^7]
+
+
+
+### (2) 打印CocoaPods的版本号
+
+```ruby
+require 'cocoapods'
+puts "CocoaPods version: #{Pod::VERSION}"
+```
+
+
+
+## 5、CocoaPods源码分析
 
 ### (1) CocoaPods Core[^10]
 
