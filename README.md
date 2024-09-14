@@ -625,6 +625,39 @@ trunk
 
 
 
+## 9、CocoaPods Plugin
+
+
+
+* 环境准备：Ruby、CocoaPods、cocoapods-plugins
+
+* Xcode工程
+* 使用pod plugins命令创建插件工程
+
+```shell
+$ pod plugins create githooks
+```
+
+
+
+```shell
+$ la
+total 48
+drwxr-xr-x  9 wesley_chen  staff   288B Sep 14 14:22 .git
+-rw-r--r--  1 wesley_chen  staff    21B Sep 14 14:22 .gitignore
+-rw-r--r--  1 wesley_chen  staff   220B Sep 14 14:22 Gemfile
+-rw-r--r--  1 wesley_chen  staff   1.1K Sep 14 14:22 LICENSE.txt
+-rw-r--r--  1 wesley_chen  staff   158B Sep 14 14:22 README.md
+-rw-r--r--  1 wesley_chen  staff   214B Sep 14 14:22 Rakefile
+-rw-r--r--  1 wesley_chen  staff   941B Sep 14 14:22 cocoapods-githooks.gemspec
+drwxr-xr-x  5 wesley_chen  staff   160B Sep 14 14:22 lib
+drwxr-xr-x  4 wesley_chen  staff   128B Sep 14 14:22 spec
+```
+
+
+
+
+
 
 
 ## 附录
