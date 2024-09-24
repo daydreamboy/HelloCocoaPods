@@ -627,6 +627,60 @@ trunk
 
 ## 9、CocoaPods Plugin
 
+这里介绍CocoaPods Plugin分为下面2个部分，如下
+
+* [创建plugin](https://blog.cocoapods.org/CocoaPods-0.28/)
+
+* [使用plugin](https://guides.cocoapods.org/plugins/setting-up-plugins.html)
+
+官方文档也对应提供2篇文档，介绍如何创建plugin和使用plugin。
+
+
+
+### (1) 创建plugin
+
+plugin是一个Ruby gem，内部存在一个约定好名字的ruby脚本`cocoapods_plugin.rb`。[官方文档描述](https://blog.cocoapods.org/CocoaPods-0.28/)，如下
+
+> A CocoaPods plugin is a gem which includes a file named `cocoapods_plugin.rb`
+
+关于`cocoapods_plugin.rb`的加载时机，[官方文档描述](https://blog.cocoapods.org/CocoaPods-0.28/)提到
+
+> CocoaPods will load this file for any installed gem that includes it. The file will be loaded before running any command, but *after* CocoaPods’ files (and those of its dependencies) have been loaded. The convention is to use this file to require the actual implementation of the plugin.
+
+总结下面几点：
+
+* 在已安装的gem中，包含这个文件`cocoapods_plugin.rb`，都会加载这个文件
+
+* 在执行任何命令之前，以及在CocoaPods自身加载之后，会加载这个文件
+
+* 约定在这个文件，使用require引用插件的实现
+
+  > 官方提供[cocoapods-open](https://github.com/leshill/open_pod_bay/blob/master/lib/cocoapods_plugin.rb)插件的cocoapods_plugin.rb实现，如下
+  >
+  > ```ruby
+  > require 'pod/command/open'
+  > ```
+  >
+  > 它仅包含一个或几个require语句，这里是导入open命令的实现。
+  >
+  > 
+
+
+
+
+
+
+
+#### 插件命名
+
+
+
+插件命名约定为cocoapods-PLUGIN_NAME。[官方文档描述](https://blog.cocoapods.org/CocoaPods-0.28/)，如下
+
+> The discoverability of plugins is another important topic that we considered. Our solution is to adopt a non-enforced convention: plugins should be named after the `cocoapods-PLUGIN_NAME` format.
+
+
+
 
 
 * 环境准备：Ruby、CocoaPods、cocoapods-plugins
@@ -653,6 +707,18 @@ drwxr-xr-x  9 wesley_chen  staff   288B Sep 14 14:22 .git
 drwxr-xr-x  5 wesley_chen  staff   160B Sep 14 14:22 lib
 drwxr-xr-x  4 wesley_chen  staff   128B Sep 14 14:22 spec
 ```
+
+
+
+### (2) 使用plugin
+
+
+
+[官方文档](https://guides.cocoapods.org/plugins/setting-up-plugins.html)提到使用plugin，有下面几个用途，如下
+
+> - Hook into the install process, both before and after
+> - Add new commands to `pod`
+> - Do whatever they want, because Ruby is a very dynamic language
 
 
 
