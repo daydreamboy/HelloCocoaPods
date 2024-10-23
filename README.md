@@ -633,27 +633,27 @@ trunk
 
 * [使用plugin](https://guides.cocoapods.org/plugins/setting-up-plugins.html)
 
-官方文档也对应提供2篇文档，介绍如何创建plugin和使用plugin。
+官方文档提供2篇文档，介绍如何创建plugin和使用plugin。
 
 
 
 ### (1) 创建plugin
 
-plugin是一个Ruby gem，内部存在一个约定好名字的ruby脚本`cocoapods_plugin.rb`。[官方文档描述](https://blog.cocoapods.org/CocoaPods-0.28/)，如下
+plugin是一个Ruby gem，内部存在一个约定好名字的ruby脚本，命名为`cocoapods_plugin.rb`。[官方文档描述](https://blog.cocoapods.org/CocoaPods-0.28/)，如下
 
 > A CocoaPods plugin is a gem which includes a file named `cocoapods_plugin.rb`
 
-关于`cocoapods_plugin.rb`的加载时机，[官方文档描述](https://blog.cocoapods.org/CocoaPods-0.28/)提到
+关于`cocoapods_plugin.rb`的加载时机，[官方文档描述](https://blog.cocoapods.org/CocoaPods-0.28/)，如下
 
 > CocoaPods will load this file for any installed gem that includes it. The file will be loaded before running any command, but *after* CocoaPods’ files (and those of its dependencies) have been loaded. The convention is to use this file to require the actual implementation of the plugin.
 
-总结下面几点：
+根据上面描述，总结下面几点：
 
 * 在已安装的gem中，包含这个文件`cocoapods_plugin.rb`，都会加载这个文件
 
 * 在执行任何命令之前，以及在CocoaPods自身加载之后，会加载这个文件
 
-* 约定在这个文件，使用require引用插件的实现
+* 约定在这个文件，使用require引用插件的实现代码。举个例子，如下
 
   > 官方提供[cocoapods-open](https://github.com/leshill/open_pod_bay/blob/master/lib/cocoapods_plugin.rb)插件的cocoapods_plugin.rb实现，如下
   >
