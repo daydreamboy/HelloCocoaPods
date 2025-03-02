@@ -31,6 +31,8 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'PodspecPrepareCommand/Classes/**/*'
+
+  # Note: If the pod is installed with the :path option this command (prepare_command) will not be executed.
   s.prepare_command = "/bin/bash Hello.sh"
   s.vendored_frameworks = "PodspecPrepareCommand.framework"
   # s.resource_bundles = {
