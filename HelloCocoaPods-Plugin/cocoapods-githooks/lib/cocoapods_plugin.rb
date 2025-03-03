@@ -1,5 +1,5 @@
 require 'cocoapods-githooks/command'
-require_relative 'githooks-sync'
+require_relative 'cocoapods-githooks/githooks-sync'
 
 module CocoapodsGitHooks
   Pod::HooksManager.register('cocoapods-githooks', :post_install) do |context|

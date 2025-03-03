@@ -630,7 +630,8 @@ trunk
 这里介绍CocoaPods Plugin分为下面2个部分，如下
 
 * [创建plugin](https://blog.cocoapods.org/CocoaPods-0.28/)
-
+* 注册plugin
+* 安装plugin
 * [使用plugin](https://guides.cocoapods.org/plugins/setting-up-plugins.html)
 
 官方文档提供2篇文档，介绍如何创建plugin和使用plugin。

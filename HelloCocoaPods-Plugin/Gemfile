@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+# Issue: activesupport and cocoapods maybe have version compatible problems
+# Solution1: set cocoapods version to specific version, and remove activesupport, let cocoapods manage it
+# Solution2: set activesupport version to specific version, and remove cocoapods, let activesupport manage it
+
+# Note: remove activesupport, and set cocoapods to 1.11.3
+#gem 'activesupport', '5.0' #(6.1.4.6, 4.2.11.3, 4.2.11.1)
+gem 'cocoapods', '1.11.3'
+gem 'cocoapods-plugins'
+
+# Note: path which contains a valid .gemspec file
+gem 'cocoapods-githooks', path: './cocoapods-githooks'
