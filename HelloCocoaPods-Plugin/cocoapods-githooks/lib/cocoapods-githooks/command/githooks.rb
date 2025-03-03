@@ -1,3 +1,5 @@
+require 'cocoapods-githooks/githooks-sync'
+
 module Pod
   class Command
     # This is an example of a cocoapods plugin adding a top-level subcommand
@@ -18,26 +20,29 @@ module Pod
     #       in the `plugins.json` file, once your plugin is released.
     #
     class Githooks < Command
-      self.summary = 'Short description of cocoapods-githooks.'
+      self.summary = <<-SUMMARY
+        Syncs hooks between team members
+      SUMMARY
 
       self.description = <<-DESC
-        Longer description of cocoapods-githooks.
+        CocoaPods plugins that syncs git-hooks placed in .git-hooks directory between team members
       DESC
 
-      self.arguments = 'NAME'
+      self.arguments = []
 
       def initialize(argv)
-        @name = argv.shift_argument
+        #@name = argv.shift_argument
         super
       end
 
       def validate!
         super
-        help! 'A Pod name is required.' unless @name
+        #help! 'A Pod name is required.' unless @name
       end
 
       def run
-        UI.puts "Add your implementation for the cocoapods-githooks plugin in #{__FILE__}"
+        Pod::UI.puts "[GitHooks]running command: pod githooks"
+        CocoapodsGitHooks::GitHooksSync.new.sync()
       end
     end
   end
