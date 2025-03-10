@@ -625,22 +625,57 @@ trunk
 
 
 
-## 9、CocoaPods Plugin
+## 9、CocoaPods插件 (CocoaPods Plugin)
 
-这里介绍CocoaPods Plugin分为下面2个部分，如下
+### (1) 介绍CocoaPods插件
+
+这篇[官方文档](https://guides.cocoapods.org/plugins/setting-up-plugins.html)提到CocoaPods插件的目的，是用于扩展CocoaPods的其他特性，而CocoaPods本身主要聚焦在依赖管理和生态发展，对应的描述，如下
+
+> The plugin architecture allowed others to extend CocoaPods to support features that don't fit the main goal of dependency management and eco-system growth.
+
+CocoaPods插件主要用下面几个用途，如下
+
+* 在pod安装过程中，进行一些hook
+* 向pod添加自定义命令
+* 由于Ruby是非常灵活的语言，可以做其他事情
+
+对应[官方文档](https://guides.cocoapods.org/plugins/setting-up-plugins.html)的描述，如下
+
+> - Hook into the install process, both before and after
+> - Add new commands to `pod`
+> - Do whatever they want, because Ruby is a very dynamic language
+
+
+
+实际上，CocoaPods插件是一个gem安装包，它包括一些Ruby脚本和资源。
+
+> All CocoaPods Plugins are Gems, and they are installed by first adding them to the `Gemfile`, then you need to mention that they exist inside your Podfile.
+
+
+
+CocoaPods插件的安装有两种方式：
+
+* 使用Gemfile文件（Gem工程级别）
+* 使用gem install安装（全局级别）
+
+这篇[官方文档](https://guides.cocoapods.org/plugins/setting-up-plugins.html)，采用第一种方式，下面也采用这个方式介绍如何实现CocoaPods插件
+
+
+
+### (2) 实现CocoaPods插件
+
+本文参考[这篇文章](https://medium.com/@vladkorzun/getting-started-with-cocoapods-plugin-development-86cd55bee1b3)，介绍如何实现CocoaPods插件，主要分为下面4个步骤，如下
 
 * [创建plugin](https://blog.cocoapods.org/CocoaPods-0.28/)
 * 注册plugin
 * 安装plugin
 * [使用plugin](https://guides.cocoapods.org/plugins/setting-up-plugins.html)
 
-官方文档提供2篇文档，介绍如何创建plugin和使用plugin。
 
 
+#### a. 创建plugin
 
-### (1) 创建plugin
-
-plugin是一个Ruby gem，内部存在一个约定好名字的ruby脚本，命名为`cocoapods_plugin.rb`。[官方文档描述](https://blog.cocoapods.org/CocoaPods-0.28/)，如下
+CocoaPod插件是一个Ruby gem，内部存在一个约定好名字的ruby脚本，命名为`cocoapods_plugin.rb`。[官方文档描述](https://blog.cocoapods.org/CocoaPods-0.28/)，如下
 
 > A CocoaPods plugin is a gem which includes a file named `cocoapods_plugin.rb`
 
@@ -668,13 +703,7 @@ plugin是一个Ruby gem，内部存在一个约定好名字的ruby脚本，命�
 
 
 
-
-
-
-
-#### 插件命名
-
-
+##### 插件命名
 
 插件命名约定为cocoapods-PLUGIN_NAME。[官方文档描述](https://blog.cocoapods.org/CocoaPods-0.28/)，如下
 
@@ -682,18 +711,15 @@ plugin是一个Ruby gem，内部存在一个约定好名字的ruby脚本，命�
 
 
 
+##### pod plugins create命令
 
-
-* 环境准备：Ruby、CocoaPods、cocoapods-plugins
-
-* Xcode工程
-* 使用pod plugins命令创建插件工程
+使用pod plugins命令创建插件工程，如下
 
 ```shell
 $ pod plugins create githooks
 ```
 
-
+查看githooks文件夹，如下
 
 ```shell
 $ la
@@ -709,19 +735,127 @@ drwxr-xr-x  5 wesley_chen  staff   160B Sep 14 14:22 lib
 drwxr-xr-x  4 wesley_chen  staff   128B Sep 14 14:22 spec
 ```
 
+这里按照约定，自动生成的gem，它的名字为cocoapods-githooks，如下
+
+```ruby
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'cocoapods-githooks/gem_version.rb'
+
+Gem::Specification.new do |spec|
+  spec.name          = 'cocoapods-githooks'
+  spec.version       = CocoapodsGithooks::VERSION
+  spec.authors       = ['wesley4chen']
+  spec.email         = ['wesley4chen@gmail.com']
+  spec.description   = %q{A short description of cocoapods-githooks.}
+  spec.summary       = %q{A longer description of cocoapods-githooks.}
+  spec.homepage      = 'https://github.com/EXAMPLE/cocoapods-githooks'
+  spec.license       = 'MIT'
+
+  spec.files = Dir['lib/**/*']
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.require_paths = ['lib']
+
+  spec.add_development_dependency 'bundler', '~> 1.3'
+  spec.add_development_dependency 'rake'
+end
+```
 
 
-### (2) 使用plugin
+
+#### b. 注册plugin
+
+```ruby
+module CocoapodsGitHooks
+  Pod::HooksManager.register('cocoapods-githooks', :post_install) do |context|
+    GitHooksSync.new.sync()
+  end
+
+  Pod::HooksManager.register('cocoapods-githooks', :post_update) do |context|
+    GitHooksSync.new.sync()
+  end
+end
+```
+
+这里注册两个hook时机，分别是post_install和post_update。
 
 
 
-[官方文档](https://guides.cocoapods.org/plugins/setting-up-plugins.html)提到使用plugin，有下面几个用途，如下
+#### c. 安装plugin
 
-> - Hook into the install process, both before and after
-> - Add new commands to `pod`
-> - Do whatever they want, because Ruby is a very dynamic language
+安装plugin进行来验证代码，目前有三种方式：
+
+* Gemfile源码安装gem
+* 本地编译gem，安装本地gem包
+* 发布gem，安装远程的gem包
 
 
+
+##### Gemfile源码安装gem
+
+在Podfile同级目录下，创建Gemfile文件，如下
+
+```ruby
+source 'https://rubygems.org'
+
+gem 'cocoapods', '1.11.3'
+gem 'cocoapods-plugins'
+
+# Note: path which contains a valid .gemspec file
+gem 'cocoapods-githooks', path: './cocoapods-githooks'
+```
+
+使用:path执行本地gemspec文件所在文件夹路径
+
+最后执行`bundle exec pod install`，bundle exec会按照Gemfile的内容，加载依赖gem库。
+
+
+
+##### 安装本地gem包
+
+```shell
+$ gem build cocoapods-githooks.gemspec
+$ gem install cocoapods-githooks-0.0.1.gem
+```
+
+
+
+##### 安装远程gem包
+
+这里不做介绍。
+
+
+
+#### d. 使用plugin
+
+在Podfile中，添加插件，如下
+
+```ruby
++ plugin 'cocoapods-githooks'
+
+platform :ios, '11.0'
+```
+
+
+
+### (3) 执行本地源码依赖的CocoaPods插件
+
+在上面介绍的三种安装plugin方式，使用Gemfile源码安装插件，方便调试本地插件代码，因此可以创建一个驱动脚本（Driver Script），提高效率，如下
+
+```shell
+#!/usr/bin/env bash
+
+rm -rf Podfile.lock
+rm -rf Gemfile.lock
+
+bundle install
+
+echo "[SHELL]current CocoaPods version: $(bundle exec pod --version)"
+#pod install --no-repo-update
+bundle exec pod install --no-repo-update
+```
 
 
 
